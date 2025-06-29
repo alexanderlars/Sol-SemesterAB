@@ -1,0 +1,107 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo 2', Arial, sans-serif ; /* Fonten för rubriker, importerad genom head i index.html. ska se lite mjuk och vänlig ut */
+    font-weight: 700;
+    font-variant: normal;
+    color: #155fa0;
+}
+
+p {
+    line-height: 150%; /* Radavstånd */
+    margin-bottom: 24px; /* Avstånd mellan stycken */
+    font-variant: normal;
+    margin: 0 auto;
+
+    font-family: 'Quicksand', Arial, sans-serif; /* Fonten för brödtext, importerad genom head i index.html. ska se lite modern och lättläst ut */
+  }
+
+hr{
+    border-radius: 4px;
+    height: 5px;
+    width: 50%;
+    margin: 40px auto;
+}
+
+header{
+    background-color: #e6f2fb;
+    border-radius: 5px;
+}
+
+
+body{
+    line-height: 150%; /* Radavstånd */
+  margin-bottom: 24px; /* Avstånd mellan stycken */
+  font-variant: normal;
+  font-size: 18px;
+  font-family: 'Quicksand', Arial, sans-serif !important;
+}
+
+
+.jumbotron{
+    color:white;  
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0)), url(images/beach-background.jpg);
+    background-size: cover;
+    height: 400px;
+    text-shadow: black 2px 2px 4px;
+
+}
+
+header .navbar{
+    background-color: white;
+
+}
+
+.navbar{
+    font-family: "Baloo 2", Arial, sans-serif;
+    font-size: 20px;    
+}
+
+.nav-item:hover{
+    text-decoration: underline;
+    color:#155fa0;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.d-inline-block{
+    margin-right: 30px !important;
+    height: 70px;
+    width: 70px;
+    border: 2px solid sandybrown;
+    border-radius: 60px;
+    padding: 4px;
+}
+
+#toppnav {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    z-index: 1;
+  }
+
+section{
+    padding: 1rem;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.card h4{
+    color: #155fa0;
+  }
+
+.btn{
+    background-color: #155fa0 !important;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+}
