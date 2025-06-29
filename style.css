@@ -1,8 +1,22 @@
+/* ========================
+   FÄRGVARIABLER FÖR DESIGNEN
+   ======================== */
+/* definierar varierbara färger för hela sidan  */
+:root {
+    --prim: #155fa0;      /* Djup blå – huvudfärg */
+    --sec: #e6f2fb;       /* Ljusblå – bakgrund/ytor */
+    --bak: #ffffff;       /* Vit bakgrund för mer luft */
+    --accent: #ffd966;    /* Mjuk gul – accent/knappar */
+    --text: #14304b;      /* Mörk blå – text */
+    --shadow: rgba(21, 95, 160, 0.10); /* Skugga för djup */
+  }
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Baloo 2', Arial, sans-serif ; /* Fonten för rubriker, importerad genom head i index.html. ska se lite mjuk och vänlig ut */
     font-weight: 700;
     font-variant: normal;
-    color: #155fa0;
+    color: var(--prim);
 }
 
 p {
@@ -10,6 +24,7 @@ p {
     margin-bottom: 24px; /* Avstånd mellan stycken */
     font-variant: normal;
     margin: 0 auto;
+    color: #14304b;
 
     font-family: 'Quicksand', Arial, sans-serif; /* Fonten för brödtext, importerad genom head i index.html. ska se lite modern och lättläst ut */
   }
@@ -19,10 +34,11 @@ hr{
     height: 5px;
     width: 50%;
     margin: 40px auto;
+    color: var(--prim);
 }
 
 header{
-    background-color: #e6f2fb;
+    background-color: var(--sec);
     border-radius: 5px;
 }
 
@@ -51,13 +67,17 @@ header .navbar{
 }
 
 .navbar{
-    font-family: "Baloo 2", Arial, sans-serif;
+    font-family: "Quicksand", Arial, sans-serif;
     font-size: 20px;    
 }
 
-.nav-item:hover{
+.navbar-nav .nav-link{
+    color: var(--text) ;
+    font-weight: 600;
+}
+
+.nav-link:hover{
     text-decoration: underline;
-    color:#155fa0;
 }
 
 .navbar-brand{
@@ -97,7 +117,7 @@ section{
   }
 
 .btn{
-    background-color: #155fa0 !important;
+    background-color: var(--prim) !important;
     color: white;
     border: none;
     padding: 10px 20px;
