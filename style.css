@@ -54,12 +54,14 @@ body{
 
 .jumbotron{
     color:white;  
-    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0)), url(images/beach-background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/beach-background.jpg);
     background-size: cover;
     height: 400px;
     text-shadow: black 2px 2px 4px;
+    border-radius: 5px;
 
 }
+
 
 header .navbar{
     background-color: white;
@@ -129,11 +131,26 @@ section{
 }
 
 .btn{
-    background-color: var(--prim) !important;
-    color: white;
+    background-color: var(--accent) !important;
+    color: var(--prim);
+    font-family: 'Baloo 2', Arial, sans-serif;
+    font-weight: 800;
     border: none;
     padding: 10px 20px;
-    
+    text-shadow: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--prim) !important;
+    color: var(--sec);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+.btn:active{
+    background-color: var(--bak) !important;
+    color: var(--text) !important;
+    border: black 2px solid;
+    box-shadow: none;
 }
