@@ -6,6 +6,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
         <!-- Bootstrap CSS v5.2.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länkar för att importera typsnitt -->
@@ -54,12 +55,12 @@
                                 <a class="nav-link" href="contact.html">Kontakt</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="basket.html">Varukorg</a>
+                                <a class="nav-link" href="basket.html">Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>  </a>
                             </li>
                         </ul>
             
                         <!-- Sökfält -->
-                        <form class="d-flex my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;">
+                        <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;">
                             <input
                                 class="form-control me-sm-2"
                                 type="text"
@@ -78,7 +79,7 @@
                 <h3 class="lead"style="color: white; font-weight: 600;" >Din drömsemester börjar här.</h3>
                 <hr class="my-4" />
                 <h3 style="color: white; font-weight: 600;">Utforska våra fantastiska resor och erbjudanden.</h3>
-                <a class="btn btn-lg bg-white m-3" href="productlist.html" role="button">Läs mer</a>
+                <a class="btn btn-lg bg-white m-3" href="productlist.html" role="button">Våra Destinationer</a>
             </div>
         </header>
 
@@ -87,19 +88,18 @@
                 <div>
                     <h2 class="text-center mb-4">Välkommen till din nya favoritresesite!</h2>
                     <p class="text-center">Vi är stolta över att erbjuda en plattform där du kan hitta de bästa resorna för hela familjen. Oavsett om du letar efter en avkopplande strandsemester, en spännande skidresa eller en kulturell storstadsweekend, har vi något för dig.</p>
+                    <br>
                     <p class="text-center">På Sol & Semester AB hjälper vi familjer att hitta glädjen i vardagen genom resor som passar alla - stora som små. Vi tror att kvalitetstid inte behöver vara komplicerad. En solig strand, ett skratt i skidbacken eller en ny stad att upptäcka tillsammans kan förvandla en vanlig vecka till något oförglömligt.</p>
-        
+                    <br>
                     <p>Med hjärtat i familjelivets tempo och örat mot era behov har vi skapat en reseplattform där ni kan drömma, planera och boka tryggt. Oavsett om ni längtar efter en aktiv semester, lugn avkoppling eller något däremellan - vi har något för er.</p>
                 </div>
             </section>
 
             <hr style="color: black;">
-            
-
             <div class="container">
                 <h2 class="text-center mb-4">Våra utvalda resemål</h2>
             <div class="card-group m-1">
-                <div class="card m-2">
+                <a href="product-prag.html" style="text-decoration: none;"><div class="card m-2">
                     <img
                         class="card-img-top"
                         src="images/prag.jpg"
@@ -107,10 +107,11 @@
                     />
                     <div class="card-body">
                         <h4 class="card-title">Prag</h4>
-                        <p class="card-text">Ett perfekt Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, numquam! Quod accusantium corrupti quia pariatur inventore dolores facere odio qui, dolorem iure nostrum quo, voluptatum tenetur, ab officiis aliquid quis.</p>
+                        <p class="card-text">Upplev magiska Prag med dess färgglada byggnader, historiska slott och mysiga kullerstensgränder. Här väntar båtutflykter på Moldau, lekfulla parker och spännande historia - perfekt för stora som små upptäckare!</p>
                     </div>
+                    </a>
                 </div>
-                <div class="card m-2">
+                <a href="product-crete.html" style="text-decoration: none;"><div class="card m-2">
                     <img
                         class="card-img-top"
                         src="images/crete.jpg"
@@ -118,10 +119,10 @@
                     />
                     <div class="card-body">
                         <h4 class="card-title">Kreta</h4>
-                        <p class="card-text">Ett perfekt Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsum velit, vel doloribus quis molestiae eligendi! Unde provident delectus adipisci eius consequuntur autem non voluptatum molestias. Magni fuga illo reiciendis.</p>
-                    </div>
+                        <p class="card-text">Kreta bjuder på soliga stränder, turkost hav och barnvänliga hotell. Utforska sagolika grottor, åk på båtäventyr eller njut av grekisk mat i charmiga byar - en perfekt blandning av avkoppling och upplevelser för alla åldrar!</p>
+                    </div></a>
                 </div>
-                <div class="card m-2">
+                <a href="product-borabora.html" style="text-decoration: none;"><div class="card m-2">
                     <img
                         class="card-img-top"
                         src="images/borabora.jpg"
@@ -129,11 +130,12 @@
                     />
                     <div class="card-body">
                         <h4 class="card-title">Bora Bora</h4>
-                        <p class="card-text">Ett perfekt Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eos esse et facere molestiae quisquam, fuga aliquid assumenda. Quas eum voluptas beatae itaque tenetur est quod quidem modi ducimus iusto!</p>
-                    </div>
+                        <p class="card-text">Kristallklart vatten, vita stränder och spännande snorkling – Bora Bora är en tropisk paradisö som bjuder på lugn, lek och lyx. Perfekt för familjer som vill kombinera avkoppling med äventyr i en sagolik miljö!</p>
+                    </div></a>
                 </div>
             </div>
-
+            
+            
             <section class="bg py-10 mt-10 text-center">
                 <h3 class="text-2xl font-semibold mb-4">Redo att börja planera din resa?</h3>
                 <p class="mb-6 text-lg">Fyll i vårt kontaktformulär så hjälper vi dig att hitta rätt resa för just er familj.</p>
