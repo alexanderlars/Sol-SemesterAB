@@ -154,3 +154,8 @@ section{
     border: black 2px solid;
     box-shadow: none;
 }
+
+.card i{
+    color: var(--prim);
+    font-size: 30px;
+}
