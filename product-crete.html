@@ -46,12 +46,12 @@
                     <!-- Meny -->
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html" aria-current="page"><u>Hem</u></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="productlist.html">Produkter</a>
-                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">Hem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page"><u>Produkter</u></a>
+                        </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Kontakt</a>
                             </li>
@@ -75,27 +75,60 @@
             </nav>         
         </header>
         <main>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/destinations/borabora.jpg" class="d-block w-100" alt="...">
+            <section class="container my-5">
+                <div class="row align-items-center">
+                  <!-- text i vänster kolumn -->
+                  <div class="col-md-6">
+                    <h2>Chania, Kreta - Grekland</h2>
+                    <p>Kreta är Greklands största ö och ett perfekt resmål för dig som vill kombinera sol, bad, kultur och natur. I den västra delen av ön ligger Chania, en av Kretas mest populära och charmiga städer. Här möts du av en vacker venetiansk hamn, färgglada hus och smala gränder fyllda med små butiker, caféer och tavernor. Chania bjuder på en avslappnad atmosfär, fantastiska stränder och närhet till både berg och vandringsleder.
+                    Med sitt milda klimat, kristallklara vatten och goda grekiska mat är Chania en plats du sent kommer glömma - oavsett om du reser med familj, partner eller vänner.
+                    </p>
+                    <br>
+                    <p>Välkommen till Kreta - och låt Chania bli din nästa favoritdestination!</p>
+                    
                   </div>
-                  <div class="carousel-item">
-                    <img src="images/destinations/mallorca.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/destinations/crete.jpg" class="d-block w-100" alt="...">
+              
+                  <!-- carousel i höger kolumn -->
+                  <div class="col-md-6">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                          <img src="images/destinations/crete-chania.jpg" class="d-block w-100" alt="Bora Bora">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Staden Chania</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                          <img src="images/destinations/crete-hotel.jpg" class="d-block w-100" alt="Gran Canaria">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>Hotell Chania AB</h5>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="images/destinations/crete-beach.jpg" class="d-block w-100" alt="Kreta">
+                          <div class="carousel-caption d-none d-md-block">
+                            <h5>En av de många fantastiska ständerna </h5>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+              </section>
+              
         </main>
         <footer>
             <div class="footer-container">
