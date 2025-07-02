@@ -37,7 +37,7 @@ hr{
     border-radius: 4px !important;
     height: 2px !important;
     width: 50%;
-    margin: 40px auto;
+    margin: 30px auto;
     color: var(--prim);
     background-color: var(--prim);
 
@@ -183,22 +183,23 @@ section{
 footer{
     background-color: var(--sec);
     padding: 20px;
-    margin: 10px;
     border-radius: 5px;
 }
 
 .footer-container {
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 20px;
+
   }
   
   .footer-section {
     flex: 1 1 300px;
     margin: 10px;
+  
   }
   
   .social-icons-contact{
