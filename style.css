@@ -60,7 +60,7 @@ body{
 
 .jumbotron{
     color:white;  
-    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/beach-background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/home-background.jpg);
     background-size: cover;
     height: 400px;
     text-shadow: black 2px 2px 4px;
@@ -132,11 +132,6 @@ section{
     padding: 20px;
     margin-bottom: 20px;
 }  
-
-.card:hover{
-    position: relative;
-    bottom: 3px;
-}
 
 .btn{
     background-color: var(--accent) !important;
@@ -228,3 +223,13 @@ footer{
     font-size: 0.9em;
     margin: 0 auto;
   }
+
+.card-header{
+  background-color: #155fa0;
+  border-radius: 5px;
+}
+
+.card-header h3{
+  color: white;
+  font-weight: 700;
+}
