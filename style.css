@@ -250,3 +250,9 @@ footer{
   color: white;
   font-weight: 700;
 }
+
+.contactform{
+    background-color: var(--sec);
+    border-radius: 5px;
+}
+
