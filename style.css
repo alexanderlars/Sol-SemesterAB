@@ -163,3 +163,57 @@ section{
     color: var(--prim);
     font-size: 30px;
 }
+
+
+#carouselExample{
+    max-width: 600px;   /* Sätt önskad maxbredd */;
+  }
+
+.carousel-item img {
+    width: 100%; /* Gör bilden responsiv */
+    height: auto; /* Behåll bildens proportioner */
+    border-radius: 5px; /* Rundade hörn för bilderna */}
+
+footer{
+    background-color: var(--sec);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
+  
+  
+  .social-icons a {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: var(--text);
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--prim);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid var(--prim);
+    width: 50%;
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0 auto;
+  }
