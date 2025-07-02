@@ -201,16 +201,33 @@ footer{
     margin: 10px;
   }
   
-  
+  .social-icons-contact{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
   .social-icons a {
     font-size: 28px;
     margin-top: 20px;
     margin-right: 10px;
     color: var(--text);
+    text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+
+  .social-icons-contact a {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
   .social-icons a:hover {
+    color: var(--prim);
+  }
+  .social-icons-contact a:hover {
     color: var(--prim);
   }
   
