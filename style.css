@@ -31,16 +31,14 @@ p {
 
   }
 
-
-
 hr{
     border-radius: 4px !important;
     height: 2px !important;
-    width: 50%;
+    width: 50% !important;
     margin: 30px auto;
-    color: var(--prim);
-    background-color: var(--prim);
-
+    color: var(--prim) !important;
+    background-color: var(--prim) !important;
+    border: none !important;
 }
 
 header{
@@ -55,19 +53,6 @@ body{
   font-variant: normal;
   font-size: 18px;
   font-family: 'Quicksand', Arial, sans-serif !important;
-}
-
-
-.jumbotron{
-    color:white;  
-    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/home-background.jpg);
-    background-size: cover;
-    height: 400px;
-    text-shadow: black 2px 2px 4px;
-    border-radius: 5px;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-
 }
 
 
@@ -187,7 +172,7 @@ footer{
 }
 
 .footer-container {
-    max-width: 1200px;
+  max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -197,10 +182,13 @@ footer{
   }
   
   .footer-section {
-    flex: 1 1 300px;
+    flex: 1;
+    min-width:300px;
     margin: 10px;
+    text-align: center;
   
   }
+
   
   .social-icons-contact{
     display: flex;
@@ -257,3 +245,16 @@ footer{
     border-radius: 5px;
 }
 
+
+.jumbotroncontainer{
+  width: 100vw;
+  background-size: cover;
+  color:white;  
+  background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/home-background.jpg);
+  height: 400px;
+  text-shadow: black 2px 2px 4px;
+  border-radius: 5px;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  background-position:center; ;
+} 

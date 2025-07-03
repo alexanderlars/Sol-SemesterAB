@@ -1,151 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <title>Sol & Semester AB - Betalning</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
-        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länkar för att importera typsnitt -->
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header class="p-2">
-            <nav class="navbar navbar-expand-md p-4 rounded">
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;">
-                        <img
-                            src="images/logo.png"
-                            alt="Sol & Semester AB Logo"
-                            width="30"
-                            height="30"
-                            class="d-inline-block align-text-top me-2"
-                        />
-                        Sol & Semester AB
-                    </a>
-            
-                    <!-- Hamburgermeny för mobil -->
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <!-- Meny -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Hem</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Produkter</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="basket.html" aria-current="page"><u>Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></u></i>(1)</a>
-                            </li>
-                        </ul>
-            
-                        <!-- Sökfält -->
-                        <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;">
-                            <input
-                                class="form-control me-sm-3"
-                                type="text"
-                                placeholder="Sök din nästa resa!" />
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                                Sök
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h1 class="text-center mb-4">Betalningsbekräftelse</h1>
-                <div class="card">
-                    <h2>Din betalning har genomförts!</h2>
-                    <p>Tack för din beställning hos Sol & Semester AB. Din betalning har mottagits och vi kommer att behandla din beställning så snart som möjligt.</p>
-                    <br>
-                    <p>Du kommer att få en bekräftelse via e-post med detaljer om din beställning och betalning. Om du inte mottar detta e-postmeddelande inom kort, vänligen kontrollera din skräppostmapp.</p>
-                    <br>
-                    <p>Om du har några frågor eller behöver hjälp, tveka inte att kontakta vår kundtjänst.</p>
-                    <br>
-                    <a href="index.html" class="btn btn-primary" style="width: 300px; margin: 0 auto;">Tillbaka till startsidan</a>
-                  </div> 
-            </section>     
-        </main>
-
-        <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div>
-        
-        <footer>
-            <div class="footer-container">
-              
-              <!-- Kontaktinformation -->
-              <div class="footer-section">
-                <h3>Kontakta oss</h3>
-                <p>Sol & Semester AB</p>
-                <p>Solsemestergatan 65, 511 99 Lindköping</p>
-                <p>Telefon: 08-123 45 67</p>
-                <p>E-post: info@solsemesterab.se</p>
-              </div>
-          
-              <!-- Sociala medier -->
-              <div class="footer-section">
-                <h3>Följ oss</h3>
-                <div class="social-icons">
-                  <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                  <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                  <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
-                  <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
-                </div>
-              </div>
-          
-              <!-- Supporttider -->
-              <div class="footer-section">
-                <h3>Supporttider</h3>
-                <p>Mån-Fre: 08:00 - 18:00</p>
-                <p>Lördag: 10:00 - 14:00</p>
-                <p>Söndag: Stängt</p>
-              </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol & Semester AB - Betalningsbekräftelse</title>
+    <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <!-- länk för att importera Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
+  </head>
+  <body>
+    <header class="p-2">
+        <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
+        <nav class="navbar navbar-expand-md p-4 rounded"><!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
+          <div class="container"> <!-- Länk till startsidan med logotyp och företagsnamn -->
+            <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;"> <!-- titeln, är en flexbox, vertikalt centrerad och har varierbar storlek-->
+              <img src="images/logo.png" alt="Sol & Semester AB Logo, ett rött och vitt parasoll i sanden" width="30" height="30" class="d-inline-block me-2">
+              <!-- loggan är inline, med alignad text -->
+              Sol & Semester AB
+            </a>
+  
+            <!-- navigationsmenyn i navbaren-->
+            <div class="navbar">
+              <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3"> <!-- Flexbox för att centrera menyn, ms-auto för att flytta den till höger, mt-2 och mt-lg-0 för att ge lite marginal -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Hem</a>
+                  <!-- Länk till startsidan, understruken för att visa att vilken sida man befinner sig på -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productlist.html">Produkter</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="basket.html" aria-current="page" ><u>Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>(1)</u></a> <!-- en boxicon för korgen och antalet produkter i den -->
+                </li>
+              </ul>
+  
+              <!-- Sökfältet i navbaren-->
+              <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;" action="productlist.html" method="get"> <!-- inline-css för att skriva över bootstrap, ms-4 för att ge lite marginal till höger, my-2 och my-lg-0 för att ge lite marginal. Sök-knappen tar en till produkter-->
+                <!-- Flexbox för att centrera sökfältet, taget från Bootstrap -->
+                <input class="form-control me-sm-3" type="text" placeholder="Sök din nästa resa!"> <!-- inputfältet för sökningen, me-sm-3 för att ge lite marginal -->
+                <button class="btn my-2" type="submit">Sök</button>
+              </form>
             </div>
-          
-            <div class="footer-bottom">
-              <p>© 2025 Sol&Semester AB 
-                <a href="#">Integritetspolicy</a>  
-                <a href="#">Cookies</a>
-              </p>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section> <!-- Här börjar huvudinnehållet som är specifikt för varje sida -->
+            <h1 class="text-center mb-4">Betalningsbekräftelse</h1> <!--en kort text om att betalningen är bekräftad-->
+            <div class="card">
+                <h2>Din betalning har genomförts!</h2>
+                <p>Tack för din beställning hos Sol & Semester AB. Din betalning har mottagits och vi kommer att behandla din beställning så snart som möjligt.</p>
+                <br>
+                <p>Du kommer att få en bekräftelse via e-post med detaljer om din beställning och betalning. Om du inte mottar detta e-postmeddelande inom kort, vänligen kontrollera din skräppostmapp.</p>
+                <br>
+                <p>Om du har några frågor eller behöver hjälp, tveka inte att kontakta vår kundtjänst.</p>
+                <br>
+                <a href="index.html" class="btn btn-primary" style="width: 300px; margin: 0 auto;">Tillbaka till startsidan</a> <!-- en knapp som tar en tillbaka till startsidan -->
+              </div> 
+        </section>     
+    </main>
+
+    <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div> <!-- En knapp som tar en till toppen av sidan, med en pil som pekar uppåt, id:t används för att styla knappen i css -->
+
+    <footer> <!-- Footer med kontaktinformation, sociala medier och supporttider -->
+        <div class="footer-container">
+          <div class="footer-section"> <!-- kontaktinformation -->
+            <h3>Kontakta oss</h3>
+            <p>Sol & Semester AB</p>
+            <p>Solsemestergatan 65, 511 99 Lindköping</p>
+            <p>Telefon: 08-123 45 67</p>
+            <p>E-post: info@solsemesterab.se</p>
+          </div>
+  
+          <div class="footer-section">  <!-- sociala medier -->
+            <h3>Följ oss</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a> <!--boxicons för sociala medier, importare via länken i head-->
+              <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+              <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+              <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
             </div>
-          </footer>
-
-
-
-        
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+          </div>
+  
+          <div class="footer-section"> <!-- kundtjänst öppetider -->
+            <h3>Supporttider</h3>
+            <p>Mån-Fre: 08:00 - 18:00</p>
+            <p>Lördag: 10:00 - 14:00</p>
+            <p>Söndag: Stängt</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom"> <!--en copyright del, ej funktionell eller legit-->
+          <p>© 2025 Sol&Semester AB 
+            <a href="#">Integritetspolicy</a>  
+            <a href="#">Cookies</a>
+          </p>
+        </div>
+      </footer>
+  
+      <!-- Importerad bootstrap javascript som läggs i script -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
-</html>
+  </html>
+        
+        

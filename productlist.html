@@ -1,278 +1,244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <title>Sol & Semester AB - Produktlista</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
-        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länkar för att importera typsnitt -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol & Semester AB - Produktlista</title>
+    <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <!-- länk för att importera Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
+  </head>
+  <body>
+    <header class="p-2">
+      <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
+      <nav class="navbar navbar-expand-md p-4 rounded"><!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
+        <div class="container"> <!-- Länk till startsidan med logotyp och företagsnamn -->
+          <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;"> <!-- titeln, är en flexbox, vertikalt centrerad och har varierbar storlek-->
+            <img src="images/logo.png" alt="Sol & Semester AB Logo, ett rött och vitt parasoll i sanden" width="30" height="30" class="d-inline-block me-2">
+            <!-- loggan är inline, med alignad text -->
+            Sol & Semester AB
+          </a>
 
-    <body>
-        <header class="p-2">
-            <nav class="navbar navbar-expand-md p-4 rounded">
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;">
-                        <img
-                            src="images/logo.png"
-                            alt="Sol & Semester AB Logo"
-                            width="30"
-                            height="30"
-                            class="d-inline-block align-text-top me-2"
-                        />
-                        Sol & Semester AB
-                    </a>
-            
-                    <!-- Hamburgermeny för mobil -->
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <!-- Meny -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Hem</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html" aria-current="page"><u>Produkter</u></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="basket.html">Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>(1)</a>
-                            </li>
-                        </ul>
-            
-                        <!-- Sökfält -->
-                        <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;">
-                            <input
-                                class="form-control me-sm-3"
-                                type="text"
-                                placeholder="Sök din nästa resa!" />
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                                Sök
-                            </button>
-                        </form>
-                    </div>
+          <!-- navigationsmenyn i navbaren-->
+          <div class="navbar">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3"> <!-- Flexbox för att centrera menyn, ms-auto för att flytta den till höger, mt-2 och mt-lg-0 för att ge lite marginal -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Hem</a>
+                <!-- Länk till startsidan, understruken för att visa att vilken sida man befinner sig på -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="productlist.html" aria-current="page"><u>Produkter</u></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="basket.html">Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>(1)</a> <!-- en boxicon för korgen och antalet produkter i den -->
+              </li>
+            </ul>
+
+            <!-- Sökfältet i navbaren-->
+            <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;" action="productlist.html" method="get"> <!-- inline-css för att skriva över bootstrap, ms-4 för att ge lite marginal till höger, my-2 och my-lg-0 för att ge lite marginal. Sök-knappen tar en till produkter-->
+              <!-- Flexbox för att centrera sökfältet, taget från Bootstrap -->
+              <input class="form-control me-sm-3" type="text" placeholder="Sök din nästa resa!"> <!-- inputfältet för sökningen, me-sm-3 för att ge lite marginal -->
+              <button class="btn my-2" type="submit">Sök</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
+    <main>
+      <section class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/product-background.jpg);"> <!-- Jumbotronsektion för att välkomna besökare, bootstrap mall  -->
+        <div class="container text-center py-5"> <!-- container för att centrera texten och ge padding -->
+          <h2 class="display-4 text-white">Upptäck våra destinationer</h2> <!-- stor rubrik för att välkomna besökare -->
+          <br>
+          <h3 class="text-white fw-semibold">Från soliga stränder till spännande äventyr - vi har något för hela familjen!</h3>
+        </div>
+      </section>
+      <section> <!-- Sektion för att visa alla resor i cards, som är i grid mha Bootstrap mall-->
+        <div class="container">
+          <h1 class="mb-4">Våra Resor</h1>
+          <p class="mb-5">Här hittar du <b>alla</b> våra soliga resmål - från tropiska paradis till äventyrliga weekendstäder. Välj din favorit och börja planera drömsemestern!</p>
+      
+          <div class="row">
+      
+            <div class="col-md-4 mb-4"> <!-- Bootstrap kolumn för att skapa en grid-layout -->
+              <div class="card h-100"> <!-- Card för att visa varje resa, samma höjd-->
+                <img src="images/destinations/mallorca.jpg" class="card-img-top" alt="Den stora imponerande katedralen i Palma de Mallorca i solnedgången framför vatten och palmar">
+                <div class="card-body d-flex flex-column"> <!-- Flexbox för att göra kortet responsivt och centrerat -->
+                  <h4 class="card-title">Mallorca</h4>
+                  <p class="card-text">Upptäck vackra stränder, charmiga byar och livligt nattliv på Balearernas pärla.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 4 200:-</p>
+                  <p><strong>Typ av resa:</strong> Sol & Bad</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a> <!-- Länk till mer information om resan, alla leder till produktinfo för kreta -->
                 </div>
-            </nav>
-            <div class="jumbotron text-center my-5 p-5" style="background-image:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0)), url(images/product-background.jpg); background-position: center;">
-                <h2 class="display-4" style="color: white;">Upptäck våra destinationer</h2>
-                <br>
-                <h3 style="color: white; font-weight: 600;">Från soliga stränder till spännande äventyr - vi har något för hela familjen!</h3>
-            </div>
-        </header>
-        <main>
-          <section>
-            <div class="container">
-              <h1 class="mb-4">Våra Resor</h1>
-              <p class="mb-5">Här hittar du <b>alla</b> våra soliga resmål - från tropiska paradis till äventyrliga weekendstäder. Välj din favorit och börja planera drömsemestern!</p>
-          
-              <div class="row">
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/mallorca.jpg" class="card-img-top" alt="Mallorca">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Mallorca</h4>
-                      <p class="card-text">Upptäck vackra stränder, charmiga byar och livligt nattliv på Balearernas pärla.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 4 200:-</p>
-                      <p><strong>Typ av resa:</strong> Sol & Bad</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/tokyo.jpg" class="card-img-top" alt="Tokyo">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Tokyo</h4>
-                      <p class="card-text">En pulserande storstad där futurism möter tradition i en unik kulturupplevelse.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 8 500:-</p>
-                      <p><strong>Typ av resa:</strong> Kultur & Äventyr</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/borabora.jpg" class="card-img-top" alt="Bora bora">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Bora bora</h4>
-                      <p class="card-text">Ett tropiskt paradis med kristallklart vatten och övervattensbungalower för total avkoppling.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 6 195:-</p>
-                      <p><strong>Typ av resa:</strong> Sol & Bad</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Ny rad för nästa tre -->
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/prague.jpg" class="card-img-top" alt="Prag">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Prag</h4>
-                      <p class="card-text">Sagolik stad med historiska byggnader, mysiga kaféer och livlig kulturscen.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 3 300:-</p>
-                      <p><strong>Typ av resa:</strong> Kultur & Weekend</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/crete.jpg" class="card-img-top" alt="Kreta">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Kreta</h4>
-                      <p class="card-text">Historiska ruiner, vackra stränder och genuin grekisk atmosfär väntar dig här.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 4 700:-</p>
-                      <p><strong>Typ av resa:</strong> Sol & Bad</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/phuket.jpg" class="card-img-top" alt="Phuket">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Phuket</h4>
-                      <p class="card-text">Exotiska stränder, tropiska skogar och livliga marknader för en oförglömlig semester.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 5 900:-</p>
-                      <p><strong>Typ av resa:</strong> Sol & Äventyr</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/gran-canaria.jpg" class="card-img-top" alt="Gran Canaria">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Gran Canaria</h4>
-                      <p class="card-text">Allsidig ö med vackra sanddyner, berg och härliga stränder för alla smaker.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 4 900:-</p>
-                      <p><strong>Typ av resa:</strong> Natur & Äventyr</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/new-york.jpg" class="card-img-top" alt="New York">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">New York</h4>
-                      <p class="card-text">Storstadspuls, ikoniska sevärdheter och shopping i världsklass.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 7 200:-</p>
-                      <p><strong>Typ av resa:</strong> Kultur & Äventyr</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4 mb-4">
-                  <div class="card h-100">
-                    <img src="images/destinations/rio.jpg" class="card-img-top" alt="Rio de Janeiro">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">Rio de Janeiro</h4>
-                      <p class="card-text">Samba, stränder och hisnande vyer från sockertoppen i denna brasilianska pärla.</p>
-                      <br>
-                      <p><strong>Pris/person från:</strong> 6 800:-</p>
-                      <p><strong>Typ av resa:</strong> Natur & Äventyr</p>
-                      <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
-                    </div>
-                  </div>
-                </div>
-          
               </div>
             </div>
-          </section>
-        </main>
-
-        <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div>
-       
-        <footer>
-          <div class="footer-container">
             
-            <!-- Kontaktinformation -->
-            <div class="footer-section">
-              <h3>Kontakta oss</h3>
-              <p>Sol & Semester AB</p>
-              <p>Solsemestergatan 65, 511 99 Lindköping</p>
-              <p>Telefon: 08-123 45 67</p>
-              <p>E-post: info@solsemesterab.se</p>
-            </div>
-        
-            <!-- Sociala medier -->
-            <div class="footer-section">
-              <h3>Följ oss</h3>
-              <div class="social-icons">
-                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/tokyo.jpg" class="card-img-top" alt="Ett flygfoto över skyskraporna i Tokyo med det röda Tokyo tower synligt">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Tokyo</h4>
+                  <p class="card-text">En pulserande storstad där futurism möter tradition i en unik kulturupplevelse.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 8 500:-</p>
+                  <p><strong>Typ av resa:</strong> Kultur & Äventyr</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
               </div>
             </div>
-        
-            <!-- Supporttider -->
-            <div class="footer-section">
-              <h3>Supporttider</h3>
-              <p>Mån-Fre: 08:00 - 18:00</p>
-              <p>Lördag: 10:00 - 14:00</p>
-              <p>Söndag: Stängt</p>
+      
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/borabora.jpg" class="card-img-top" alt="En bro i trä leder ut till ett hus med vasstak ute i det tropiskt blå havet"">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Bora bora</h4>
+                  <p class="card-text">Ett tropiskt paradis med kristallklart vatten och övervattensbungalower för total avkoppling.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 6 195:-</p>
+                  <p><strong>Typ av resa:</strong> Sol & Bad</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Ny rad för nästa tre cards -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/prague.jpg" class="card-img-top" alt="En gammal kyrka och ett astronomiskt ur i Prag">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Prag</h4>
+                  <p class="card-text">Sagolik stad med historiska byggnader, mysiga kaféer och livlig kulturscen.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 3 300:-</p>
+                  <p><strong>Typ av resa:</strong> Kultur & Weekend</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/crete.jpg" class="card-img-top" alt="Fyren som står vid ingången till staden Chanias hamn på Kreta">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Kreta</h4>
+                  <p class="card-text">Historiska ruiner, vackra stränder och genuin grekisk atmosfär väntar dig här.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 4 700:-</p>
+                  <p><strong>Typ av resa:</strong> Sol & Bad</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/phuket.jpg" class="card-img-top" alt="Unika trädbeklädda bergformationer på en strand med turkost vatten och avlånga båtar på stranden.  ">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Phuket</h4>
+                  <p class="card-text">Exotiska stränder, tropiska skogar och livliga marknader för en oförglömlig semester.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 5 900:-</p>
+                  <p><strong>Typ av resa:</strong> Sol & Äventyr</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/gran-canaria.jpg" class="card-img-top" alt="Utsikt från en bilväg längs med den beriga kusten längs med havet på Gran Canaria">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Gran Canaria</h4>
+                  <p class="card-text">Allsidig ö med vackra sanddyner, berg och härliga stränder för alla smaker.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 4 900:-</p>
+                  <p><strong>Typ av resa:</strong> Natur & Äventyr</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/new-york.jpg" class="card-img-top" alt="Ett flygfoto över New Yorks skyskrapor i solnedgången, med bland annat Empire State Building ">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">New York</h4>
+                  <p class="card-text">Storstadspuls, ikoniska sevärdheter och shopping i världsklass.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 7 200:-</p>
+                  <p><strong>Typ av resa:</strong> Kultur & Äventyr</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="images/destinations/rio.jpg" class="card-img-top" alt="Utsikten från ett berg som ser ner över bukten vid Rio de Janeiro, ljusa byggnader i en bergig miljö nära havet ">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">Rio de Janeiro</h4>
+                  <p class="card-text">Samba, stränder och hisnande vyer från sockertoppen i denna brasilianska pärla.</p>
+                  <br>
+                  <p><strong>Pris/person från:</strong> 6 800:-</p>
+                  <p><strong>Typ av resa:</strong> Natur & Äventyr</p>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                </div>
+              </div>
             </div>
           </div>
-        
-          <div class="footer-bottom">
-            <p>© 2025 Sol&Semester AB 
-              <a href="#">Integritetspolicy</a>  
-              <a href="#">Cookies</a>
-            </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div> <!-- En knapp som tar en till toppen av sidan, med en pil som pekar uppåt, id:t används för att styla knappen i css -->
+
+    <footer> <!-- Footer med kontaktinformation, sociala medier och supporttider -->
+        <div class="footer-container">
+          <div class="footer-section"> <!-- kontaktinformation -->
+            <h3>Kontakta oss</h3>
+            <p>Sol & Semester AB</p>
+            <p>Solsemestergatan 65, 511 99 Lindköping</p>
+            <p>Telefon: 08-123 45 67</p>
+            <p>E-post: info@solsemesterab.se</p>
           </div>
-        </footer>
-
-        
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+  
+          <div class="footer-section">  <!-- sociala medier -->
+            <h3>Följ oss</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a> <!--boxicons för sociala medier, importare via länken i head-->
+              <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+              <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+              <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+  
+          <div class="footer-section"> <!-- kundtjänst öppetider -->
+            <h3>Supporttider</h3>
+            <p>Mån-Fre: 08:00 - 18:00</p>
+            <p>Lördag: 10:00 - 14:00</p>
+            <p>Söndag: Stängt</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom"> <!--en copyright del, ej funktionell eller legit-->
+          <p>© 2025 Sol&Semester AB 
+            <a href="#">Integritetspolicy</a>  
+            <a href="#">Cookies</a>
+          </p>
+        </div>
+      </footer>
+  
+      <!-- Importerad bootstrap javascript som läggs i script -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
-</html>
+  </html>

@@ -1,298 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <title>Sol & Semester AB - Kreta</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
-        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länkar för att importera typsnitt -->
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header class="p-2">
-            <nav class="navbar navbar-expand-md p-4 rounded">
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;">
-                        <img
-                            src="images/logo.png"
-                            alt="Sol & Semester AB Logo"
-                            width="30"
-                            height="30"
-                            class="d-inline-block align-text-top me-2"
-                        />
-                        Sol & Semester AB
-                    </a>
-            
-                    <!-- Hamburgermeny för mobil -->
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <!-- Meny -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3">
-                          <li class="nav-item">
-                            <a class="nav-link" href="index.html">Hem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html" aria-current="page"><u>Produkter</u></a>
-                        </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="basket.html">Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>(1)</a>
-                            </li>
-                        </ul>
-            
-                        <!-- Sökfält -->
-                        <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;">
-                            <input
-                                class="form-control me-sm-3"
-                                type="text"
-                                placeholder="Sök din nästa resa!" />
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                                Sök
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </nav>         
-        </header>
-        <main>
-            <section class="container my-5">
-                <div class="row align-items-center">
-                  <!-- text i vänster kolumn -->
-                  <div class="col-md-6">
-                    <h2>Chania, Kreta - Grekland</h2>
-                    <p>
-                      Kreta är Greklands största ö och ett perfekt resmål för dig som vill kombinera sol, bad, kultur och natur. I den västra delen av ön ligger Chania, en av Kretas mest populära och charmiga städer, där historia möter semesterliv. Här möts du av en vacker venetiansk hamn, färgglada hus och smala gränder fyllda med små butiker, caféer och tavernor. Chania bjuder på en avslappnad atmosfär, fantastiska stränder, lokala marknader och närhet till både mäktiga berg och vackra vandringsleder.  
-                      Med sitt milda klimat, kristallklara vatten och goda grekiska mat är Chania en plats du sent kommer glömma.
-                      </p>
-                    <br>
-                    <br>
-                    <p>Välkommen till Kreta - och låt Chania bli din nästa favoritdestination!</p>
-                    
-                  </div>
-              
-                  <!-- carousel i höger kolumn -->
-                  <div class="col-md-6">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                          <img src="images/destinations/crete-chania.jpg" class="d-block w-100" alt="Bora Bora">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Staden Chania</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                          <img src="images/destinations/crete-hotel.jpg" class="d-block w-100" alt="Gran Canaria">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>Hotel Sol Chania</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="images/destinations/crete-beach.jpg" class="d-block w-100" alt="Kreta">
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>En av de många fantastiska ständerna </h5>
-                          </div>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section>
-                <h2>Vi erbjuder:</h2>
-                <ul>
-                  <li><h5>Flyg tur och retur</h5>
-                    <ul>
-                      <li>Avreseflygplats: Stockholm Arlanda (ARN)</li>
-                      <li>Ankomstflygplats: Chania International Airport (CHQ)</li>
-                      <li>Utresa: Direktflyg med Mediterranean Sky Airlines, avgång 08:30, ankomst 13:00</li>
-                      <li>Hemresa: Direktflyg med Mediterranean Sky Airlines, avgång 14:30, ankomst 18:00</li>
-                      <li>Bagage: 1 incheckad väska (20 kg) per person och 1 handbagage (8 kg) ingår</li>
-                    </ul>
-                  </li>
-                  <li><h5>Transfer till och från hotellet</h5>
-                    <ul>
-                      <li>Privat transfer från Chania flygplats till Hotel Sol Chania (ca 30 minuter)</li>
-                      <li>Transfer tillbaka till flygplatsen enligt flygtiderna</li>
-                      <li>Chaufför väntar med skylt och hjälper till med bagaget</li>
-                    </ul>
-                  </li>
-                  <li><h5>Boende i 7 nätter</h5>
-                    <ul>
-                      <li>Hotel Sol Chania, dubbelrum med balkong och havsutsikt</li>
-                      <li>Incheckning 15:00, utcheckning 11:00</li>
-                      <li>4-stjärnigt hotell</li>
-                      <li>Wi-Fi ingår i rummet</li>
-                      <li>Daglig städning och rumservice</li>
-                    </ul>
-                  </li>
-                  <li><h5>Frukostbuffé</h5>
-                    <ul>
-                      <li>Serveras varje morgon i hotellets restaurang mellan 07:00 och 10:30</li>
-                      <li>Stort utbud av färsk frukt, bröd, ägg, ostar, lokala specialiteter och nybryggt kaffe</li>
-                    </ul>
-                  </li>
-                  <li><h5>Tillgång till pool och gym</h5>
-                    <ul>
-                      <li>Utomhuspool öppen från 08:00 till 20:00</li>
-                      <li>Gym med moderna träningsmaskiner tillgängligt dygnet runt</li>
-                    </ul>
-                    <li><h5>Barnklubb</h5>
-                      <ul>
-                        <li>På hotellet finns en rolig och trygg barnklubb för barn mellan 4 och 12 år</li>
-                        <li>Dagliga aktiviteter, lekplatser och pedagogiska spel </li>
-                      </ul>
-                    </li>
-                  </li>
-                  <li><h5>Svensktalande personal på plats</h5>
-                    <ul>
-                      <li>Reseledare finns tillgänglig för frågor och hjälp under hela vistelsen</li>
-                      <li>Telefon och kontor i hotellobby med öppettider kl. 09:00-18:00</li>
-                    </ul>
-                  </li>
-                </ul>
-
-              </section>
-              <section>
-                <h2>Pris och bokning</h2>
-                <p><b>Pris per person:</b> 10 500 kr</p>
-                <p><b>Pris per barn (0-12 år):</b> 9 000 kr<p>
-                <br>
-                <p>Inkluderar alla ovanstående tjänster och avgifter.</p>
-                <p>Betalningsvillkor: 20% vid bokning, resterande belopp 30 dagar före avresa.</p>
-                <p>Avbokningsregler: Gratis avbokning fram till 30 dagar före avresa. Vid senare avbokning debiteras 50% av totalbeloppet.</p>
-
-              </section>
-              <section>
-                <h2>Vänligen fyll i din information</h2>
-                <p>Därefter kan du lägga resan i varukorgen och sedan ta ditt nästa steg mot en oförglömlig resa!</p>
-
-                <h4>Din information</h4>
-                <form>
-                  <div class="mb-3">
-                    <label for="fullName" class="form-label">Fullständigt namn</label>
-                    <input type="text" class="form-control" id="fullName" name="fullName" required>
-                  </div>
-                
-                  <div class="mb-3">
-                    <label for="email" class="form-label">E-postadress</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                  </div>
-                
-                  <div class="mb-3">
-                    <label for="phone" class="form-label">Telefonnummer</label>
-                    <input type="tel" class="form-control" id="phone" name="phone">
-                  </div>
-                
-                  <div class="mb-3">
-                    <label for="adults" class="form-label">Antal vuxna resenärer</label>
-                    <input type="number" class="form-control" id="adults" name="adults" min="1" max="10" value="1" required>
-                  </div>
-                
-                  <div class="mb-3">
-                    <label for="children" class="form-label">Antal barn (0-12 år)</label>
-                    <input type="number" class="form-control" id="children" name="children" min="0" max="10" value="0" required>
-                  </div>
-                
-                  <div class="mb-3">
-                    <label for="travelDate" class="form-label">Avresedatum</label>
-                    <input type="date" class="form-control" id="travelDate" name="travelDate" required>
-                  </div>
-                
-                  <a href="basket.html"><button type="submit" class="btn btn-primary" onclick="window.location.href='basket.html'">Lägg i varukorgen</button></a>
-                </form>
-              
-              </section>
-        </main>
-
-        <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div>
-
-        <footer>
-            <div class="footer-container">
-              
-              <!-- Kontaktinformation -->
-              <div class="footer-section">
-                <h3>Kontakta oss</h3>
-                <p>Sol & Semester AB</p>
-                <p>Solsemestergatan 65, 511 99 Lindköping</p>
-                <p>Telefon: 08-123 45 67</p>
-                <p>E-post: info@solsemesterab.se</p>
-              </div>
-          
-              <!-- Sociala medier -->
-              <div class="footer-section">
-                <h3>Följ oss</h3>
-                <div class="social-icons">
-                  <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                  <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                  <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
-                  <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
-                </div>
-              </div>
-          
-              <!-- Supporttider -->
-              <div class="footer-section">
-                <h3>Supporttider</h3>
-                <p>Mån-Fre: 08:00 - 18:00</p>
-                <p>Lördag: 10:00 - 14:00</p>
-                <p>Söndag: Stängt</p>
-              </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol & Semester AB - Kreta</title>
+    <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <!-- länk för att importera Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
+  </head>
+  <body>
+    <header class="p-2">
+        <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
+        <nav class="navbar navbar-expand-md p-4 rounded"><!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
+          <div class="container"> <!-- Länk till startsidan med logotyp och företagsnamn -->
+            <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;"> <!-- titeln, är en flexbox, vertikalt centrerad och har varierbar storlek-->
+              <img src="images/logo.png" alt="Sol & Semester AB Logo, ett rött och vitt parasoll i sanden" width="30" height="30" class="d-inline-block me-2">
+              <!-- loggan är inline, med alignad text -->
+              Sol & Semester AB
+            </a>
+  
+            <!-- navigationsmenyn i navbaren-->
+            <div class="navbar">
+              <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3"> <!-- Flexbox för att centrera menyn, ms-auto för att flytta den till höger, mt-2 och mt-lg-0 för att ge lite marginal -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Hem</a>
+                  <!-- Länk till startsidan, understruken för att visa att vilken sida man befinner sig på -->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="productlist.html" aria-current="page"><u>Produkter</u></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="basket.html" >Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>(1)</a> <!-- en boxicon för korgen och antalet produkter i den -->
+                </li>
+              </ul>
+  
+              <!-- Sökfältet i navbaren-->
+              <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;" action="productlist.html" method="get"> <!-- inline-css för att skriva över bootstrap, ms-4 för att ge lite marginal till höger, my-2 och my-lg-0 för att ge lite marginal. Sök-knappen tar en till produkter-->
+                <!-- Flexbox för att centrera sökfältet, taget från Bootstrap -->
+                <input class="form-control me-sm-3" type="text" placeholder="Sök din nästa resa!"> <!-- inputfältet för sökningen, me-sm-3 för att ge lite marginal -->
+                <button class="btn my-2" type="submit">Sök</button>
+              </form>
             </div>
-          
-            <div class="footer-bottom">
-              <p>© 2025 Sol&Semester AB 
-                <a href="#">Integritetspolicy</a>  
-                <a href="#">Cookies</a>
+          </div>
+        </nav>
+    </header>
+    <main>
+      <section class="container my-5">
+        <div class="row align-items-center"> <!--denna div ska ha en karusell med bilder till höger och text till vänster-->
+          <!-- text i vänster kolumn -->
+          <div class="col-md-6"> <!--inuti denna div står introduktionstext om resemålet till vänster i sidan-->
+            <h2>Chania, Kreta - Grekland</h2>
+            <p>
+              Kreta är Greklands största ö och ett perfekt resmål för dig som vill kombinera sol, bad, kultur och natur. I den västra delen av ön ligger Chania, en av Kretas mest populära och charmiga städer, där historia möter semesterliv. Här möts du av en vacker venetiansk hamn, färgglada hus och smala gränder fyllda med små butiker, caféer och tavernor. Chania bjuder på en avslappnad atmosfär, fantastiska stränder, lokala marknader och närhet till både mäktiga berg och vackra vandringsleder.  
+              Med sitt milda klimat, kristallklara vatten och goda grekiska mat är Chania en plats du sent kommer glömma.
               </p>
+            <br>
+            <br>
+            <p>Välkommen till Kreta - och låt Chania bli din nästa favoritdestination!</p>
+          </div>
+          <div class="col-md-6"> <!-- den högra kolumnen i Bootstrapens grid som innehåller karusellen -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <!-- karusellen är av Bootstrap mall och visar bilder på resmålet-->
+              
+              <div class="carousel-indicators">
+                <!-- Knappindikatorer längst ner i karusellen som visar vilken bild som visas, klickbara för att hoppa till en specifik bild -->
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              
+              <div class="carousel-inner">
+                <!-- innehåller varje enskild "slide" (bild och text) i karusellen -->
+                
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <!-- första bilden i karusellen, markerad som aktiv så den visas först -->
+                  <img src="images/destinations/crete-chania.jpg" class="d-block w-100" alt="Hamnen i Chania visas med de färgglada husen och fyren i bakgrunden">
+                  <div class="carousel-caption d-none d-md-block">
+                    <!-- Text som visas ovanpå bilden på större skärmar -->
+                    <h5>Staden Chania</h5>
+                  </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="2000">
+                  <!-- den andra bilden i karusellen har en kortare tid -->
+                  <img src="images/destinations/crete-hotel.jpg" class="d-block w-100" alt="Utsikten från en av hotellets balkonger med havet och poolområde">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Hotel Sol Chania</h5>
+                  </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/destinations/crete-beach.jpg" class="d-block w-100" alt="En solig strand med blått vatten med ett berg i bakgrunden vid havet">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>En av de många fantastiska ständerna</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Navigeringsknappar för att gå till föregående eller nästa bild i karusellen -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </footer>
-
-
-
+          </div>
+        </div>
+      </section>
+      <section> <!-- denna sektion innehåller information om resan, hotellet och vad som ingår i priset -->
+        <h2>Vi erbjuder:</h2> 
+        <ul>
+          <li>
+            <h5>Flyg tur och retur</h5>
+            <ul>
+              <li>Avreseflygplats: Stockholm Arlanda (ARN)</li>
+              <li>Ankomstflygplats: Chania International Airport (CHQ)</li>
+              <li>Utresa: Direktflyg med Mediterranean Sky Airlines, avgång 08:30, ankomst 13:00</li>
+              <li>Hemresa: Direktflyg med Mediterranean Sky Airlines, avgång 14:30, ankomst 18:00</li>
+              <li>Bagage: 1 incheckad väska (20 kg) per person och 1 handbagage (8 kg) ingår</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Transfer till och från hotellet</h5>
+            <ul>
+              <li>Privat transfer från Chania flygplats till Hotel Sol Chania (ca 30 minuter)</li>
+              <li>Transfer tillbaka till flygplatsen enligt flygtiderna</li>
+              <li>Chaufför väntar med skylt och hjälper till med bagaget</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Boende i 7 nätter</h5>
+            <ul>
+              <li>Hotel Sol Chania, dubbelrum med balkong och havsutsikt</li>
+              <li>Incheckning 15:00, utcheckning 11:00</li>
+              <li>4-stjärnigt hotell</li>
+              <li>Wi-Fi ingår i rummet</li>
+              <li>Daglig städning och rumservice</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Frukostbuffé</h5>
+            <ul>
+              <li>Serveras varje morgon i hotellets restaurang mellan 07:00 och 10:30</li>
+              <li>Stort utbud av färsk frukt, bröd, ägg, ostar, lokala specialiteter och nybryggt kaffe</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Tillgång till pool och gym</h5>
+            <ul>
+              <li>Utomhuspool öppen från 08:00 till 20:00</li>
+              <li>Gym med moderna träningsmaskiner tillgängligt dygnet runt</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Barnklubb</h5>
+            <ul>
+              <li>På hotellet finns en rolig och trygg barnklubb för barn mellan 4 och 12 år</li>
+              <li>Dagliga aktiviteter, lekplatser och pedagogiska spel</li>
+            </ul>
+          </li>
+          <li>
+            <h5>Svensktalande personal på plats</h5>
+            <ul>
+              <li>Reseledare finns tillgänglig för frågor och hjälp under hela vistelsen</li>
+              <li>Telefon och kontor i hotellobby med öppettider kl. 09:00-18:00</li>
+            </ul>
+          </li>
+        </ul>
         
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
+      </section>
+      <section> <!-- denna sektion innehåller pris och bokningsvillkor -->
+        <h2>Pris och bokning</h2>
+        <p><b>Pris per person:</b> 10 500 kr</p>
+        <p><b>Pris per barn (0-12 år):</b> 9 000 kr<p>
+        <br>
+        <p>Inkluderar alla ovanstående tjänster och avgifter.</p>
+        <p>Betalningsvillkor: 20% vid bokning, resterande belopp 30 dagar före avresa.</p>
+        <p>Avbokningsregler: Gratis avbokning fram till 30 dagar före avresa. Vid senare avbokning debiteras 50% av totalbeloppet.</p>
+
+      </section>
+      <section> <!-- denna sektion innehåller formuläret för att fylla i information -->
+        <h2>Vänligen fyll i din information</h2>
+        <p>Därefter kan du lägga resan i varukorgen och sedan ta ditt nästa steg mot en oförglömlig resa!</p>
+
+        <h4>Din information</h4>
+        <form action="basket.html" method="get"> <!-- Formuläret skickar en till varukorg-sidan när det är ifyllt -->
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Fullständigt namn</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+          </div>
+        
+          <div class="mb-3">
+            <label for="email" class="form-label">E-postadress</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+        
+          <div class="mb-3">
+            <label for="phone" class="form-label">Telefonnummer</label>
+            <input type="tel" class="form-control" id="phone" name="phone">
+          </div>
+        
+          <div class="mb-3">
+            <label for="adults" class="form-label">Antal vuxna resenärer</label>
+            <input type="number" class="form-control" id="adults" name="adults" min="1" max="10" value="1" required> <!-- min och max för att begränsa antalet vuxna resenärer, value="1" för att sätta standardvärdet till 1 -->
+          </div>
+        
+          <div class="mb-3">
+            <label for="children" class="form-label">Antal barn (0-12 år)</label>
+            <input type="number" class="form-control" id="children" name="children" min="0" max="10" value="0" required>
+          </div>
+        
+          <div class="mb-3">
+            <label for="travelDate" class="form-label">Avresedatum</label>
+            <input type="date" class="form-control" id="travelDate" name="travelDate" required> <!-- inputfält för att välja avresedatum, kräver att ett datum väljs -->
+          </div>
+        
+          <button type="submit" class="btn">Lägg i varukorgen</button>
+        </form>
+      </section>
+    </main>
+
+    <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div> <!-- En knapp som tar en till toppen av sidan, med en pil som pekar uppåt, id:t används för att styla knappen i css -->
+
+    <footer> <!-- Footer med kontaktinformation, sociala medier och supporttider -->
+        <div class="footer-container">
+          <div class="footer-section"> <!-- kontaktinformation -->
+            <h3>Kontakta oss</h3>
+            <p>Sol & Semester AB</p>
+            <p>Solsemestergatan 65, 511 99 Lindköping</p>
+            <p>Telefon: 08-123 45 67</p>
+            <p>E-post: info@solsemesterab.se</p>
+          </div>
+  
+          <div class="footer-section">  <!-- sociala medier -->
+            <h3>Följ oss</h3>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a> <!--boxicons för sociala medier, importare via länken i head-->
+              <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+              <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+              <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+  
+          <div class="footer-section"> <!-- kundtjänst öppetider -->
+            <h3>Supporttider</h3>
+            <p>Mån-Fre: 08:00 - 18:00</p>
+            <p>Lördag: 10:00 - 14:00</p>
+            <p>Söndag: Stängt</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom"> <!--en copyright del, ej funktionell eller legit-->
+          <p>© 2025 Sol&Semester AB 
+            <a href="#">Integritetspolicy</a>  
+            <a href="#">Cookies</a>
+          </p>
+        </div>
+      </footer>
+  
+      <!-- Importerad bootstrap javascript som läggs i script -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
-</html>
+  </html>

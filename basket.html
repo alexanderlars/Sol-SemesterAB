@@ -1,187 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <title>Sol & Semester AB - Varukorg</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
-        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länkar för att importera typsnitt -->
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol & Semester AB - Varukorg</title>
+    <link rel="icon" type="image/jpg" href="images/logo-favicon.png"> <!-- länk för att koppla favicon -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <!-- länk för att importera Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:700&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500&display=swap" rel="stylesheet"> <!-- länk för att importera typsnitt -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- länk för att importera Boxicons -->
+    <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
+  </head>
+  <body>
+    <header class="p-2">
+      <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
+      <nav class="navbar navbar-expand-md p-4 rounded">
+        <!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
+        <div class="container">
+          <!-- Länk till startsidan med logotyp och företagsnamn -->
+          <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;">
+            <!-- titeln, är en flexbox, vertikalt centrerad och har varierbar storlek-->
+            <img src="images/logo.png" alt="Sol & Semester AB Logo, ett rött och vitt parasoll i sanden" width="30" height="30" class="d-inline-block me-2">
+            <!-- loggan är inline, med alignad text -->
+            Sol & Semester AB
+          </a>
 
-    <body>
-        <header class="p-2">
-            <nav class="navbar navbar-expand-md p-4 rounded">
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center fs-1 fs-md-3 fs-lg-3" href="index.html" style="color: #155fa0; font-weight: 800;">
-                        <img
-                            src="images/logo.png"
-                            alt="Sol & Semester AB Logo"
-                            width="30"
-                            height="30"
-                            class="d-inline-block align-text-top me-2"
-                        />
-                        Sol & Semester AB
-                    </a>
-            
-                    <!-- Hamburgermeny för mobil -->
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-            
-                    <!-- Meny -->
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Hem</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Produkter</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Kontakt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="basket.html" aria-current="page"><u>Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></u></i>(1)</a>
-                            </li>
-                        </ul>
-            
-                        <!-- Sökfält -->
-                        <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;">
-                            <input
-                                class="form-control me-sm-3"
-                                type="text"
-                                placeholder="Sök din nästa resa!" />
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                                Sök
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-            <div class="jumbotron text-center my-5 p-5" style="background-image:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0)), url(images/basket-background.jpg); background-position: center;">
-                <h2 class="display-4" style="color: white;">Varukorg</h2>
-                <br>
-                <h3 class="lead"style="color: white; font-weight: 600;">Här kan du hantera alla dina bokningar</h3>
-                <br>
+          <!-- navigationsmenyn i navbaren-->
+          <div class="navbar">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 me-3"> <!-- Flexbox för att centrera menyn, ms-auto för att flytta den till höger, mt-2 och mt-lg-0 för att ge lite marginal -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Hem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productlist.html">Produkter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="basket.html" aria-current="page"><u>Varukorg <i class='bx  bx-basket' style="position:relative; top: 3px;"></i>(1) </u></a> <!-- en boxicon för korgen och antalet produkter i den -->
+              <!-- Länk till basket, understruken för att visa att vilken sida man befinner sig på -->
+              </li>
+            </ul>
+
+            <!-- Sökfältet i navbaren-->
+            <form class="d-flex ms-4 my-2 my-lg-0" style="font-family: 'Quicksand', Arial, sans-serif ;" action="productlist.html" method="get"> <!-- inline-css för att skriva över bootstrap, ms-4 för att ge lite marginal till höger, my-2 och my-lg-0 för att ge lite marginal. Sök-knappen tar en till produkter-->
+              <!-- Flexbox för att centrera sökfältet, taget från Bootstrap -->
+              <input class="form-control me-sm-3" type="text" placeholder="Sök din nästa resa!"> <!-- inputfältet för sökningen, me-sm-3 för att ge lite marginal -->
+              <button class="btn my-2" type="submit">Sök</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
+    <main>
+      <section class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/basket-background.jpg);"> <!-- byter bakgrundsbild och en gradient för att göra texten mer läsbar -->
+        <div class="container text-center py-5">
+          <h2 class="display-4 text-white">Din Varukorg</h2> <!-- rubriken för sidan, stor text -->
+          <br>
+          <h3 class="lead text-white fw-semibold">Här kan du hantera alla dina bokningar</h3>
+        </div>
+      </section>
+      <section>
+        <div class="container mt-5">
+          <h2 class="mb-4" style="margin-top: 0;">Din Resekorg</h2> <!--lite introduktion till sidan du hamnat på-->
+          <p class="my-4">Du är nästan klar! Här nedan ser du dina valda resor - du kan justera, ta bort eller fortsätta till betalning. Kontrollera att datum, flyg och hotell stämmer. När du är redo, klicka på knappen längst ner för att slutföra din bokning.</p>
+
+          <h3>Visar 1 av 1 resor:</h3> <!-- visar hur många resor som finns i korgen, här är det 1 av 1 -->
+          <div class="card mb-4"> <!-- Ett stort card för att visa bokningsinformation -->
+            <div class="card-header">
+              <h4 style="color: white;">Din bokning</h4>
             </div>
-        </header>
+            <div class="card-body"> <!-- Card body som innehåller all information om resan -->
+              <h4 class="card-title">Resa till Chania, Grekland</h4>
 
-        <main>
-            <section>
-                <div class="container mt-5">
-                    <h2 class="text-center mb-4" style="margin-top: 0 !important;">Din Resekorg</h2>
-                    <p class="text-center">Du är nästan klar! Här nedan ser du dina valda resor - du kan justera, ta bort eller fortsätta till betalning. Kontrollera att datum, flyg och hotell stämmer. När du är redo, klicka på knappen längst ner för att slutföra din bokning.</p>
+              <p><b>Datum:</b> 12 juli - 19 juli 2025 (7 nätter)</p>
 
-                    <h3>Visar 1 av 1 resor:</h3>
-                <div class="card mb-4"> <!-- Card för att visa bokningsinformation -->
-                    <div class="card-header">
-                      <h4 style="color: white;">Din bokning</h4>
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">Resa till Chania, Grekland</h4>
-                  
-                      <p><b>Datum:</b> 12 juli - 19 juli 2025 (7 nätter)</p>
-                  
-                      <p><b>Flyg:</b><br>
-                        Tur: Arlanda (ARN) → Chania (CHQ), 08:30 - 13:00<br>
-                        Retur: Chania (CHQ) → Arlanda (ARN), 14:30 - 18:00<br>
-                        Flygbolag: Mediterranean Sky Airlines
-                      </p>
-                  
-                      <p><b>Boende:</b><br>
-                        Hotel Sol Chania, Dubbelrum med balkong & havsutsikt<br>
-                        Inkluderar frukostbuffé, tillgång till pool och gym
-                      </p>
-                  
-                      <p><b>Antal resenärer:</b> 2 vuxna, 1 barn</p>
-                  
-                      <hr>
-                  
-                      <p><b>Pris per vuxen:</b> 11 500 kr<br>
-                      <b>Pris per barn:</b> 9 000 kr<br>
-                      <b>Totalt: 32 000 kr</b></p>
-                      <br>
-                  
-                      <div class="d-flex justify-content-between">
-                        <a href="#" class="btn btn-primary">Ta bort resa</a>
-                        <a href="paymentpage.html" class="btn btn-primary">Fortsätt till betalning</a>
-                      </div>
-                    </div>
-                  </div>
-            </section>
-        </main>
-
-        <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div>
-        
-        <footer>
-            <div class="footer-container">
-              
-              <!-- Kontaktinformation -->
-              <div class="footer-section">
-                <h3>Kontakta oss</h3>
-                <p>Sol & Semester AB</p>
-                <p>Solsemestergatan 65, 511 99 Lindköping</p>
-                <p>Telefon: 08-123 45 67</p>
-                <p>E-post: info@solsemesterab.se</p>
-              </div>
-          
-              <!-- Sociala medier -->
-              <div class="footer-section">
-                <h3>Följ oss</h3>
-                <div class="social-icons">
-                  <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
-                  <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
-                  <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
-                  <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
-                </div>
-              </div>
-          
-              <!-- Supporttider -->
-              <div class="footer-section">
-                <h3>Supporttider</h3>
-                <p>Mån-Fre: 08:00 - 18:00</p>
-                <p>Lördag: 10:00 - 14:00</p>
-                <p>Söndag: Stängt</p>
-              </div>
-            </div>
-          
-            <div class="footer-bottom">
-              <p>© 2025 Sol&Semester AB 
-                <a href="#">Integritetspolicy</a>  
-                <a href="#">Cookies</a>
+              <p><b>Flyg:</b><br>
+                Tur: Arlanda (ARN) → Chania (CHQ), 08:30 - 13:00<br>
+                Retur: Chania (CHQ) → Arlanda (ARN), 14:30 - 18:00<br>
+                Flygbolag: Mediterranean Sky Airlines
               </p>
+
+              <p><b>Boende:</b><br>
+                Hotel Sol Chania, Dubbelrum med balkong & havsutsikt<br>
+                Inkluderar frukostbuffé, tillgång till pool och gym
+              </p>
+
+              <p><b>Antal resenärer:</b> 2 vuxna, 1 barn</p>
+
+              <hr>
+
+              <p><b>Pris per vuxen:</b> 11 500 kr<br>
+              <b>Pris per barn:</b> 9 000 kr<br>
+              <b>Totalt: 32 000 kr</b></p>
+              <br>
+
+              <div class="d-flex justify-content-between"> <!-- Flexbox för att placera knapparna på varsin sida -->
+                <a href="#" class="btn btn-primary">Ta bort resa</a>
+                <a href="paymentpage.html" class="btn btn-primary">Fortsätt till betalning</a> <!-- knappar för att ta bort resan eller fortsätta till betalning, fortsätt tar dig till en betalsida -->
+              </div>
             </div>
-          </footer>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div> <!-- skapar en pil i vänstra nedre hörnet för att komma tillbaka till toppen av sidan -->
 
+    <footer> <!-- Footer med kontaktinformation, sociala medier och supporttider -->
+      <div class="footer-container">
+        <div class="footer-section"> <!-- kontaktinformation -->
+          <h3>Kontakta oss</h3>
+          <p>Sol & Semester AB</p>
+          <p>Solsemestergatan 65, 511 99 Lindköping</p>
+          <p>Telefon: 08-123 45 67</p>
+          <p>E-post: info@solsemesterab.se</p>
+        </div>
 
-        
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+        <div class="footer-section">  <!-- sociala medier -->
+          <h3>Följ oss</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a> <!--boxicons för sociala medier, importare via länken i head-->
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://x.com/?lang=en"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+        <div class="footer-section"> <!-- kundtjänst öppetider -->
+          <h3>Supporttider</h3>
+          <p>Mån-Fre: 08:00 - 18:00</p>
+          <p>Lördag: 10:00 - 14:00</p>
+          <p>Söndag: Stängt</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom"> <!--en copyright del, ej funktionell eller legit-->
+        <p>© 2025 Sol&Semester AB 
+          <a href="#">Integritetspolicy</a>  
+          <a href="#">Cookies</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Importerad bootstrap javascript som läggs i script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
 </html>
