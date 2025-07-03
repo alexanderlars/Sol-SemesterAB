@@ -11,10 +11,13 @@
     --shadow: rgba(21, 95, 160, 0.10); /* Skugga för djup */
   }
 
+/* ========================
+   ALLMÄNNA STILAR FÖR TEXT OCH RUBRIKER
+   ======================== */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Baloo 2', Arial, sans-serif ; /* Fonten för rubriker, importerad genom head i index.html. ska se lite mjuk och vänlig ut */
-    font-weight: 700;
+    font-weight: 700; /* Fetstil för rubriker */
     font-variant: normal;
     color: var(--prim);
     margin-top: 10px;
@@ -31,7 +34,8 @@ p {
 
   }
 
-hr{
+hr{ /* Av någon anledning som jag tror har med Bootstrap att göra så ser alla horisontell linjer kosntiga ut (utom i footern), hur jag än försöker ändra dess utseende */
+  /* inline css funkar inte,!important funkar inte. Positionering funkar att ändra men inte utseendet. Så det fick vara så helt enkelt*/
     border-radius: 4px !important;
     height: 2px !important;
     width: 50% !important;
@@ -41,20 +45,13 @@ hr{
     border: none !important;
 }
 
+/* ========================
+   STILAR FÖR NAVBAR OCH HEADER
+   ======================== */
 header{
     background-color: var(--sec);
     border-radius: 5px;
 }
-
-
-body{
-    line-height: 150%; /* Radavstånd */
-  margin-bottom: 24px; /* Avstånd mellan stycken */
-  font-variant: normal;
-  font-size: 18px;
-  font-family: 'Quicksand', Arial, sans-serif !important;
-}
-
 
 header .navbar{
     background-color: white;
@@ -62,7 +59,7 @@ header .navbar{
 }
 
 .navbar{
-    font-family: "Quicksand", Arial, sans-serif;
+    font-family: "Quicksand", Arial, sans-serif; /* skriver över bootstraps förvalda. Fonten för navbar, importerad genom head i index.html. ska se lite modern och lättläst ut */
     font-size: 20px;    
 }
 
@@ -72,56 +69,87 @@ header .navbar{
 }
 
 .nav-link:hover{
-    text-decoration: underline;
+    text-decoration: underline; /* Understrykning vid hover */
 }
 
-.navbar-brand{
+.navbar-brand{ /* Logotypen i navbaren */
     font-size: 40px;
     font-weight: 700;
 }
 
-.d-inline-block{
-    margin-right: 30px !important;
-    height: 70px;
-    width: 70px;
-    border: 2px solid sandybrown;
-    border-radius: 60px;
-    padding: 4px;
+/* ========================
+   STILAR FÖR SIDANS INNEHÅLL
+   ======================== */
+
+body{
+  line-height: 150%; /* Radavstånd */
+  margin-bottom: 24px; /* Avstånd mellan stycken */
+  font-variant: normal;
+  font-size: 18px;
+  font-family: 'Quicksand', Arial, sans-serif !important; /* grundfonten för hela bodyn*/
 }
 
-#toppnav {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    background-color: var(--sec);
-    z-index: 1;
-  }
-
-section{
+section{ /* allmänt för alla sektioner på sidan */
     padding: 1rem;
     margin: 20px auto;
     max-width: 1200px;
 }
 
-.card h4{
-    color: #155fa0;
-  }
+/* ========================
+   JUMBOTRON DESIGN
+   ======================== */
+.jumbotroncontainer{ /* design för jumbotronen på alla sidorna som är en stor banner med text */
+  width: 100vw;
+  background-size: cover; /* gör att bakgrundsbilden täcker hela jumbotronen */
+  color:white;  
+  background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/home-background.jpg);
+  height: 400px;
+  text-shadow: black 2px 2px 4px; /* skapar en skugga för texten så att den syns bättre mot ljusa bakgrunder */
+  border-radius: 5px;
+  margin-top: 20px !important; /* skriver över */
+  margin-bottom: 20px !important; 
+  background-position:center; /* centrerar bilden i yled*/
+} 
 
-.card{
-    background-color: var(--sec);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+/* ========================
+   ALLMÄNN KORTDESIGN
+   ======================== */
+
+
+.card{ /* design för alla korten på sidan */
+  background-color: var(--sec);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
 }  
 
-.btn{
+.card h4{
+    color: var(--prim); /* skriver över bootstrap för rubriker i kort */
+  }
+
+.card-header{
+    background-color: var(--prim); /* bakgrundsfärg för headern i kort */
+    border-radius: 5px;
+}
+  
+  .card-header h3{
+    color: white;  /* skriver över för rubriker i header i kort */
+    font-weight: 700; 
+  }
+
+.card i{ /* design för ikoner i korten */
+    color: var(--prim);
+    font-size: 30px;
+}
+
+/* ========================
+   KNAPPDESIGN
+   ======================== */
+
+.btn{ /* design för alla knappar på sidan, ljus färg för att sticka ut */
     background-color: var(--accent) !important;
     color: var(--prim);
-    font-family: 'Baloo 2', Arial, sans-serif;
+    font-family: 'Baloo 2', Arial, sans-serif; /* Fonten för knappar är samma som rubriker för att visa att de är viktiga */
     font-weight: 800;
     border: none;
     padding: 10px 20px;
@@ -130,39 +158,67 @@ section{
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover{ /* design för knappar vid hover */
     background-color: var(--prim) !important;
     color: var(--sec);
     box-shadow: 0 4px 8px var(--shadow);
 }
 
-.btn:active{
+.btn:active{ /* design för knappar vid klick */
     background-color: var(--bak) !important;
     color: var(--text) !important;
     border: black 2px solid;
     box-shadow: none;
 }
 
-.card i{
-    color: var(--prim);
-    font-size: 30px;
-}
+
+/* ========================
+   Karusell design
+   ======================== */
 
 
 #carouselExample{
-    max-width: 600px;   /* Sätt önskad maxbredd */;
+    max-width: 600px;
   }
 
 .carousel-caption{
-    background-color: rgba(255, 255, 255, 0.9); /* Halvtransparent bakgrund för texten */
+    background-color: rgba(255, 255, 255, 0.9); /* Halvtransparent bakgrund där texten är*/
     border-radius: 5px;
-
 }
 
 .carousel-item img {
     width: 100%; 
     height: 450px;
-    border-radius: 5px; /* Rundade hörn för bilderna */}
+    border-radius: 5px;}
+
+
+/* ========================
+   Kontaktformulär design
+   ======================== */
+.contactform{
+  background-color: var(--sec);
+  border-radius: 5px;
+  }
+
+/* ========================
+   Toppnavigationssymbol
+   ======================== */
+
+#toppnav { /* design för toppnavigationssymbolen */
+  position: fixed; /* fäster symbolen längst ner till vänster */
+  bottom: 1rem;
+  left: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem; /* rund */
+  text-align: center;
+  background-color: var(--sec);
+  z-index: 1; /* gör att den ligger över andra element */
+}
+
+/* ========================
+   Footerdesign
+   ======================== */
 
 
 footer{
@@ -173,54 +229,23 @@ footer{
 
 .footer-container {
   max-width: 1200px;
-    display: flex;
+    display: flex; /* gör att sektionerna ligger bredvid varandra */
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: space-between; /* jämnar ut utrymmet mellan sektionerna */
+    margin: 0 auto; /* centrerar footer */
     padding: 20px;
 
   }
   
   .footer-section {
-    flex: 1;
+    flex: 1; /* gör att varje sektion tar lika mycket plats */
     min-width:300px;
     margin: 10px;
-    text-align: center;
+    text-align: center; /* centrerar texten i varje sektion */
   
   }
 
-  
-  .social-icons-contact{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
-  }
-  .social-icons a {
-    font-size: 28px;
-    margin-top: 20px;
-    margin-right: 10px;
-    color: var(--text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .social-icons-contact a {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    color: var(--text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    color: var(--prim);
-  }
-  .social-icons-contact a:hover {
-    color: var(--prim);
-  }
-  
-  .footer-bottom {
+  .footer-bottom { /* design för den nedersta delen av footern */
     border-top: 1px solid var(--prim);
     width: 50%;
     margin-top: 20px;
@@ -230,31 +255,37 @@ footer{
     margin: 0 auto;
   }
 
-.card-header{
-  background-color: #155fa0;
-  border-radius: 5px;
-}
+/* ========================
+   Sociala medier ikoner i footer och kontakt
+   ======================== */
 
-.card-header h3{
-  color: white;
-  font-weight: 700;
-}
+  .social-icons-contact{
+    display: flex; /* gör att ikonerna ligger bredvid varandra */
+    flex-wrap: wrap; /* gör att ikonerna kan brytas till nästa rad om sidan krymps */
+    margin: 10px;
+  }
+  .social-icons a {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: var(--text);
+    text-decoration: none; /* tar bort understrykning */
+    transition: color 0.3s ease; /* gör att färgen ändras smidigt vid hover */
+  }
 
-.contactform{
-    background-color: var(--sec);
-    border-radius: 5px;
-}
+  .social-icons-contact a {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: var(--text);
+    text-decoration: none; /* tar bort understrykning */
+    transition: color 0.3s ease; /* gör att färgen ändras smidigt vid hover */
+  }
 
+  .social-icons a:hover {
+    color: var(--prim); /* ändrar färg vid hover */
+  }
+  .social-icons-contact a:hover {
+    color: var(--prim);
+  }
 
-.jumbotroncontainer{
-  width: 100vw;
-  background-size: cover;
-  color:white;  
-  background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/home-background.jpg);
-  height: 400px;
-  text-shadow: black 2px 2px 4px;
-  border-radius: 5px;
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-  background-position:center; ;
-} 
