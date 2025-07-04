@@ -29,7 +29,7 @@ p {
     margin-bottom: 24px; /* Avstånd mellan stycken */
     font-variant: normal;
     margin: 0 auto;
-    color: #14304b;
+    color: var(--text);
     font-family: 'Quicksand', Arial, sans-serif; /* Fonten för brödtext, importerad genom head i index.html. ska se lite modern och lättläst ut */
 
   }
@@ -68,13 +68,19 @@ header .navbar{
     font-weight: 600;
 }
 
+
 .nav-link:hover{
     text-decoration: underline; /* Understrykning vid hover */
 }
 
-.navbar-brand{ /* Logotypen i navbaren */
-    font-size: 40px;
-    font-weight: 700;
+
+.d-inline-block{ /* Logotypen i navbaren */
+  margin-right: 30px !important;
+  height: 70px;
+  width: 70px;
+  border: 2px solid var(--accent);
+  border-radius: 60px;
+  padding: 4px;
 }
 
 /* ========================
