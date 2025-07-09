@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
   </head>
   <body>
-    <header class="p-2">
+    <header>
       <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
       <nav class="navbar navbar-expand-md p-4 rounded"><!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
         <div class="container"> <!-- Länk till startsidan med logotyp och företagsnamn -->
@@ -81,15 +81,13 @@
     </header>
     <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
     <main>
-      <section
-        class="jumbotroncontainer"
-        style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/contact-background.jpg)"
-      >
-        <div class="container text-center py-5">
-          <h2 class="display-4 text-white">Kontakta oss</h2>
-          <!-- rubriken för sidan, stor text -->
-          <br>
-          <h3 class="text-white fw-semibold">Vi hjälper dig gärna!</h3>
+      <section>
+        <div class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/contact-background.jpg)">
+          <div class="container text-center py-5">
+            <h2 class="display-4 text-white">Kontakta oss</h2> <!-- rubriken för sidan, stor text -->
+            <br>
+            <h3 class="text-white fw-semibold">Vi hjälper dig gärna!</h3>
+          </div>
         </div>
       </section>
 
@@ -182,13 +180,14 @@
       </section>
       <hr>
       <section>
-        <h3>Vår adress</h3>
-        <p>
-          Du kan också besöka vår fysiska resebyrå Sol & Semester AB i Lindköping
+        <div class="mb-5">
+          <h3>Vår adress</h3>
+          <p>Du kan också besöka vår fysiska resebyrå Sol & Semester AB i Lindköping
           för att ställa dina frågor.
-        </p>
-        <br>
-        <p><b>Adress:</b> Solsemestergatan 65, 511 99 Lindköping</p>
+          </p>
+          <br>
+          <p><b>Adress:</b> Solsemestergatan 65, 511 99 Lindköping</p>
+        </div>
       </section>
     </main>
 

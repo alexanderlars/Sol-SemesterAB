@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
   </head>
   <body>
-    <header class="p-2">
+    <header>
         <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
         <nav class="navbar navbar-expand-md p-4 rounded"><!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
           <div class="container"> <!-- Länk till startsidan med logotyp och företagsnamn -->
@@ -118,6 +118,7 @@
           </div>
         </div>
       </section>
+
       <section> <!-- denna sektion innehåller information om resan, hotellet och vad som ingår i priset -->
         <h2>Vi erbjuder:</h2> 
         <ul>
@@ -178,9 +179,10 @@
             </ul>
           </li>
         </ul>
-        
-
       </section>
+
+      <hr>
+
       <section> <!-- denna sektion innehåller pris och bokningsvillkor -->
         <h2>Pris och bokning</h2>
         <p><b>Pris per person:</b> 10 500 kr</p>
@@ -191,12 +193,13 @@
         <p>Avbokningsregler: Gratis avbokning fram till 30 dagar före avresa. Vid senare avbokning debiteras 50% av totalbeloppet.</p>
 
       </section>
-      <section> <!-- denna sektion innehåller formuläret för att fylla i information -->
+
+      <section class="contactform" > <!-- denna sektion innehåller formuläret för att fylla i information -->
         <h2>Vänligen fyll i din information</h2>
         <p>Därefter kan du lägga resan i varukorgen och sedan ta ditt nästa steg mot en oförglömlig resa!</p>
 
         <h4>Din information</h4>
-        <form action="basket.html" method="get"> <!-- Formuläret skickar en till varukorg-sidan när det är ifyllt -->
+        <form action="basket.html" style="margin-top: 40px" method="get"> <!-- Formuläret skickar en till varukorg-sidan när det är ifyllt -->
           <div class="mb-3">
             <label for="fullName" class="form-label">Fullständigt namn</label>
             <input type="text" class="form-control" id="fullName" name="fullName" required>

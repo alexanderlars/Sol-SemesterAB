@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
   </head>
   <body>
-    <header class="p-2">
+    <header>
       <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
       <nav class="navbar navbar-expand-md p-4 rounded">
         <!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
@@ -57,11 +57,13 @@
     </header>
     <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
     <main>
-      <section class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/basket-background.jpg);"> <!-- byter bakgrundsbild och en gradient för att göra texten mer läsbar -->
-        <div class="container text-center py-5">
-          <h2 class="display-4 text-white">Din Varukorg</h2> <!-- rubriken för sidan, stor text -->
-          <br>
-          <h3 class="text-white fw-semibold">Här kan du hantera alla dina bokningar</h3>
+      <section> <!-- wrapper-element för att gruppera jumbotronen -->
+        <div class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/basket-background.jpg);"> <!-- byter bakgrundsbild och en gradient för att göra texten mer läsbar -->
+          <div class="container text-center py-5">
+            <h2 class="display-4 text-white">Din Varukorg</h2> <!-- rubriken för sidan, stor text -->
+            <br>
+            <h3 class="text-white fw-semibold">Här kan du hantera alla dina bokningar</h3>
+          </div>
         </div>
       </section>
       <section>

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css"> <!-- länk för att importera den egna css filen  -->
   </head>
   <body>
-    <header class="p-2">
+    <header class>
       <!-- Header med navigationsmeny och jumbotron, padding med Bootstrap. Denna är samma navbar för alla sidor på hemsidan-->
       <nav class="navbar navbar-expand-md p-4 rounded"><!-- Navigationsmeny med Bootstrap, mycket padding och rundade hörn -->
         <div class="container"> <!-- Länk till startsidan med logotyp och företagsnamn -->
@@ -54,13 +54,15 @@
     </header>
     <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
     <main>
-      <section class="jumbotroncontainer"> <!-- Jumbotronsektion för att välkomna besökare, bootstrap mall  -->
-        <div class="container text-center py-5"> <!-- container för att centrera texten och ge padding -->
-          <h2 class="display-4 text-white">Välkommen till Sol & Semester AB!</h2> <!-- stor rubrik för att välkomna besökare -->
-          <h3 class="lead text-white fw-semibold">Din drömsemester börjar här</h3> 
-          <br>
-          <h3 class="text-white fw-semibold">Utforska våra fantastiska resor och erbjudanden</h3>
-          <a class="btn btn-lg btn-light m-3" href="productlist.html" role="button">Boka redan nu!</a> <!-- call to action knapp för att komma till destinationer-->
+      <section>
+        <div class="jumbotroncontainer"> <!-- Jumbotronsektion för att välkomna besökare, bootstrap mall  -->
+          <div class="container text-center py-5"> <!-- container för att centrera texten och ge padding -->
+            <h2 class="display-4 text-white">Välkommen till Sol & Semester AB!</h2> <!-- stor rubrik för att välkomna besökare -->
+            <h3 class="lead text-white fw-semibold">Din drömsemester börjar här</h3> 
+            <br>
+            <h3 class="text-white fw-semibold">Utforska våra fantastiska resor och erbjudanden</h3>
+            <a class="btn btn-lg btn-light m-3" href="productlist.html" role="button">Boka redan nu!</a> <!-- call to action knapp för att komma till destinationer-->
+          </div>
         </div>
       </section>
       <section> <!-- Sektion för att presentera företaget -->
@@ -78,7 +80,7 @@
 
       <section> <!-- Sektion för att visa upp utvalda produkter -->
         <div class="container">
-          <h2 class="mb-4">Våra utvalda resemål</h2> 
+          <h2 class="mb-4">Våra utvalda resmål</h2> 
           <p class="mb-5">Vår utvalda destinationer är noga handplockade för att erbjuda dig fantastiska upplevelser till kanonpris. Ta chansen att fynda bland våra bästa erbjudanden och boka din nästa drömresa idag!</p>
 
           <article> <!-- article som innehåller kort för varje destination, article för att kunna exportera eller visa erbjudandena någon annanstans -->
@@ -126,11 +128,14 @@
         </div>
       </section>
 
-      <section class="py-2 my-5"> <!-- sektion för att att kontakta företaget -->
-        <div class="container">
-          <h2 class="mb-3">Har du frågor eller vill du komma i kontakt med oss?</h2>
-          <p class="mb-4 fs-5">Fyll i vårt kontaktformulär så återkommer vi till dig så snart som möjligt!</p>
-          <a href="contact.html#contactform" class="btn btn-lg">Kontakta oss</a> <!-- call to action knapp som leder till kontaktformuläret på kontaktsidan -->
+      <hr>
+      <section class="py-2 my-5 mb-5"> <!-- sektion för att att kontakta -->
+        <div class="mb-5">
+          <div class="container">
+            <h2 class="mb-3">Har du frågor eller vill du komma i kontakt med oss?</h2>
+            <p class="mb-4 fs-5">Fyll i vårt kontaktformulär så återkommer vi till dig så snart som möjligt!</p>
+            <a href="contact.html#contactform" class="btn btn-lg">Kontakta oss</a> <!-- call to action knapp som leder till kontaktformuläret på kontaktsidan -->
+          </div>
         </div>
       </section>
     </main>

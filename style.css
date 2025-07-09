@@ -49,8 +49,8 @@ hr{ /* Av någon anledning som jag tror har med Bootstrap att göra så ser alla
    STILAR FÖR NAVBAR OCH HEADER
    ======================== */
 header{
-    background-color: var(--sec);
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 header .navbar{
@@ -93,6 +93,8 @@ body{
   font-variant: normal;
   font-size: 18px;
   font-family: 'Quicksand', Arial, sans-serif !important; /* grundfonten för hela bodyn*/
+  background-color: #e6f2fb;
+  margin: 15px; 
 }
 
 section{ /* allmänt för alla sektioner på sidan */
@@ -101,21 +103,28 @@ section{ /* allmänt för alla sektioner på sidan */
     max-width: 1200px;
 }
 
+main{
+  background-color: white;
+  border-radius: 5px;
+}
+
+
 /* ========================
    JUMBOTRON DESIGN
    ======================== */
-.jumbotroncontainer{ /* design för jumbotronen på alla sidorna som är en stor banner med text */
-  width: 100vw;
-  background-size: cover; /* gör att bakgrundsbilden täcker hela jumbotronen */
-  color:white;  
+
+
+.jumbotroncontainer {
+  background-size: cover;
+  color: white;
   background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/home-background.jpg);
   height: 400px;
-  text-shadow: black 2px 2px 4px; /* skapar en skugga för texten så att den syns bättre mot ljusa bakgrunder */
+  text-shadow: black 2px 2px 4px;
   border-radius: 5px;
-  margin-top: 20px !important; /* skriver över */
-  margin-bottom: 20px !important; 
-  background-position:center; /* centrerar bilden i yled*/
-} 
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  background-position: center;
+}
 
 /* ========================
    ALLMÄNN KORTDESIGN
