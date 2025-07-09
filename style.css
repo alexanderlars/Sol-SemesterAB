@@ -15,7 +15,14 @@
    ALLMÄNNA STILAR FÖR TEXT OCH RUBRIKER
    ======================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1{ /* Stilen för loggans titel */
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: 'Baloo 2', Arial, sans-serif ; /* Fonten för rubriker, importerad genom head i index.html. ska se lite mjuk och vänlig ut */
     font-weight: 700; /* Fetstil för rubriker */
     font-variant: normal;
@@ -138,7 +145,7 @@ main{
   margin-bottom: 20px;
 }  
 
-.card h4{
+.card h3{
     color: var(--prim); /* skriver över bootstrap för rubriker i kort */
   }
 
@@ -146,6 +153,7 @@ main{
     background-color: var(--prim); /* bakgrundsfärg för headern i kort */
     border-radius: 5px;
 }
+
   
   .card-header h3{
     color: white;  /* skriver över för rubriker i header i kort */
@@ -269,6 +277,12 @@ footer{
     font-size: 0.9em;
     margin: 0 auto;
   }
+
+  .footer-bottom a{
+    color: var(--prim)
+    
+  }
+
 
 /* ========================
    Sociala medier ikoner i footer och kontakt
