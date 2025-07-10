@@ -54,151 +54,158 @@
     </header>
     <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
     <main>
-      <section>
+      <section> <!-- wrapper-element för att gruppera jumbotronen -->
         <div class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/product-background.jpg);">
           <div class="container text-center py-5">
-            <h2 class="display-4 text-white">Upptäck våra destinationer</h2>
-            <br>
+            <h2 class="display-4 text-white mb-5">Upptäck våra destinationer</h2>
             <h3 class="text-white fw-semibold">Från soliga stränder till spännande äventyr - vi har något för hela familjen!</h3>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2 class="mb-4">Våra Resor</h2>
-          <p class="mb-5">Här hittar du <b>alla</b> våra soliga resmål - från tropiska paradis till äventyrliga weekendstäder. Välj din favorit och börja planera drömsemestern!</p>
-    
-          <div class="row">
-    
-            <div class="col-md-4 mb-4">
-              <div class="card h-100">
+      <section> <!-- Här börjar sektionen för produktlistan -->
+        <div class="container"> <!-- Bootstrap-container för att centrera innehållet och skapa horisontell padding -->
+          
+          <h2 class="mb-4">Våra Resor</h2> <!-- Rubrik för produktlistan, mb-4 ger lite marginal under rubriken -->
+          <p class="mb-5">
+            Här hittar du <b>alla</b> våra soliga resmål - från tropiska paradis till äventyrliga weekendstäder.
+            Välj din favorit och börja planera drömsemestern!
+          </p>
+      
+          <div class="row"> <!-- Bootstrap-rad som innehåller kolumner. Här skapas en grid-layout för alla produkter -->
+      
+            <!-- Nedan följer 9 cards, varje card är placerat i en anpassningsbar kolumn-->
+            <!-- Varje .col-md-4 innebär att det får 4 av 12 kolumner per rad, vilket ger 3 kort per rad på medelstora skärmar -->
+      
+            <div class="col-md-4 mb-4"> 
+              <div class="card h-100"> <!-- Bootstrap-kort som fyller hela kolumnhöjden för jämn layout -->
                 <img src="images/destinations/mallorca.jpg" class="card-img-top" alt="Den stora imponerande katedralen i Palma de Mallorca i solnedgången framför vatten och palmar">
-                <div class="card-body d-flex flex-column">
+                <div class="card-body d-flex flex-column"> <!-- Flexbox för att göra kortets innehåll flexibelt och centrerat -->
                   <h4 class="card-title">Mallorca</h4>
-                  <p class="card-text">Upptäck vackra stränder, charmiga byar och livligt nattliv på Balearernas pärla.</p>
-                  <br>
+                  <p class="card-text mb-4">Upptäck vackra stränder, charmiga byar och livligt nattliv på Balearernas pärla.</p>
                   <p><strong>Pris/person från:</strong> 6 900:-</p>
                   <p><strong>Typ av resa:</strong> Sol & Bad</p>
-                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
+                  <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a> <!-- Knapp som hamnar längst ner tack vare mt-auto -->
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Upprepar liknande struktur för resten av destinationerna -->
+      
+            <!-- Tokyo -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <img src="images/destinations/tokyo.jpg" class="card-img-top" alt="Ett flygfoto över skyskraporna i Tokyo med det röda Tokyo tower synligt">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Tokyo</h4>
-                  <p class="card-text">En pulserande storstad där futurism möter tradition i en unik kulturupplevelse.</p>
-                  <br>
+                  <p class="card-text mb-4">En pulserande storstad där futurism möter tradition i en unik kulturupplevelse.</p>
                   <p><strong>Pris/person från:</strong> 13 500:-</p>
                   <p><strong>Typ av resa:</strong> Kultur & Äventyr</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Bora Bora -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <img src="images/destinations/borabora.jpg" class="card-img-top" alt="En bro i trä leder ut till ett hus med vasstak ute i det tropiskt blå havet">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Bora bora</h4>
-                  <p class="card-text">Ett tropiskt paradis med kristallklart vatten och övervattensbungalower för total avkoppling.</p>
-                  <br>
+                  <p class="card-text mb-4">Ett tropiskt paradis med kristallklart vatten och övervattensbungalower för total avkoppling.</p>
                   <p><strong>Pris/person från:</strong> 16 900:-</p>
                   <p><strong>Typ av resa:</strong> Sol & Bad</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Prag -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <img src="images/destinations/prague.jpg" class="card-img-top" alt="En gammal kyrka och ett astronomiskt ur i Prag">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Prag</h4>
-                  <p class="card-text">Sagolik stad med historiska byggnader, mysiga kaféer och livlig kulturscen.</p>
-                  <br>
+                  <p class="card-text mb-4">Sagolik stad med historiska byggnader, mysiga kaféer och livlig kulturscen.</p>
                   <p><strong>Pris/person från:</strong> 5 500:-</p>
                   <p><strong>Typ av resa:</strong> Kultur & Weekend</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Kreta -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <img src="images/destinations/crete.jpg" class="card-img-top" alt="Fyren som står vid ingången till staden Chanias hamn på Kreta">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Kreta</h4>
-                  <p class="card-text">Historiska ruiner, vackra stränder och genuin grekisk atmosfär väntar dig här.</p>
-                  <br>
+                  <p class="card-text mb-4">Historiska ruiner, vackra stränder och genuin grekisk atmosfär väntar dig här.</p>
                   <p><strong>Pris/person från:</strong> 10 500:-</p>
                   <p><strong>Typ av resa:</strong> Sol & Bad</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Phuket -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
                 <img src="images/destinations/phuket.jpg" class="card-img-top" alt="Unika trädbeklädda bergformationer på en strand med turkost vatten och avlånga båtar på stranden.">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Phuket</h4>
-                  <p class="card-text">Exotiska stränder, tropiska skogar och livliga marknader för en oförglömlig semester.</p>
-                  <br>
+                  <p class="card-text mb-4">Exotiska stränder, tropiska skogar och livliga marknader för en oförglömlig semester.</p>
                   <p><strong>Pris/person från:</strong> 11 200:-</p>
                   <p><strong>Typ av resa:</strong> Sol & Äventyr</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Gran Canaria -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
-                <img src="images/destinations/gran-canaria.jpg" class="card-img-top" alt="Utsikt från en bilväg längs med den beriga kusten längs med havet på Gran Canaria">
+                <img src="images/destinations/gran-canaria.jpg" class="card-img-top" alt="Utsikt från en bilväg längs med den bergiga kusten längs med havet på Gran Canaria">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Gran Canaria</h4>
-                  <p class="card-text">Allsidig ö med vackra sanddyner, berg och härliga stränder för alla smaker.</p>
-                  <br>
+                  <p class="card-text mb-4">Allsidig ö med vackra sanddyner, berg och härliga stränder för alla smaker.</p>
                   <p><strong>Pris/person från:</strong> 8 300:-</p>
                   <p><strong>Typ av resa:</strong> Natur & Äventyr</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- New York -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
-                <img src="images/destinations/new-york.jpg" class="card-img-top" alt="Ett flygfoto över New Yorks skyskrapor i solnedgången, med bland annat Empire State Building ">
+                <img src="images/destinations/new-york.jpg" class="card-img-top" alt="Ett flygfoto över New Yorks skyskrapor i solnedgången, med bland annat Empire State Building">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">New York</h4>
-                  <p class="card-text">Storstadspuls, ikoniska sevärdheter och shopping i världsklass.</p>
-                  <br>
+                  <p class="card-text mb-4">Storstadspuls, ikoniska sevärdheter och shopping i världsklass.</p>
                   <p><strong>Pris/person från:</strong> 12 400:-</p>
                   <p><strong>Typ av resa:</strong> Kultur & Äventyr</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
+            <!-- Rio de Janeiro -->
             <div class="col-md-4 mb-4">
               <div class="card h-100">
-                <img src="images/destinations/rio.jpg" class="card-img-top" alt="Utsikten från ett berg som ser ner över bukten vid Rio de Janeiro, ljusa byggnader i en bergig miljö nära havet ">
+                <img src="images/destinations/rio.jpg" class="card-img-top" alt="Utsikten från ett berg som ser ner över bukten vid Rio de Janeiro, ljusa byggnader i en bergig miljö nära havet">
                 <div class="card-body d-flex flex-column">
                   <h4 class="card-title">Rio de Janeiro</h4>
-                  <p class="card-text">Samba, stränder och hisnande vyer från sockertoppen i denna brasilianska pärla.</p>
-                  <br>
+                  <p class="card-text mb-4">Samba, stränder och hisnande vyer från sockertoppen i denna brasilianska pärla.</p>
                   <p><strong>Pris/person från:</strong> 13 200:-</p>
                   <p><strong>Typ av resa:</strong> Natur & Äventyr</p>
                   <a href="product-crete.html" class="btn btn-primary mt-auto">Läs mer</a>
                 </div>
               </div>
             </div>
-    
+      
           </div>
-        </div>
-      </section>
+        </div> 
+      </section> 
     </main>
     
     <div id="toppnav"><a href="#top" style="color: black;">&#8593;</a></div> <!-- En knapp som tar en till toppen av sidan, med en pil som pekar uppåt, id:t används för att styla knappen i css -->

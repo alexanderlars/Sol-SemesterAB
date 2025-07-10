@@ -81,17 +81,16 @@
     </header>
     <!--Här börjar huvudinnehållet som är specifikt för varje sida-->
     <main>
-      <section>
+      <section> <!-- wrapper-element för att gruppera jumbotronen -->
         <div class="jumbotroncontainer" style="background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0)), url(images/contact-background.jpg)">
           <div class="container text-center py-5">
-            <h2 class="display-4 text-white">Kontakta oss</h2> <!-- rubriken för sidan, stor text -->
-            <br>
+            <h2 class="display-4 text-white mb-5">Kontakta oss</h2> <!-- rubriken för sidan, stor text -->
             <h3 class="text-white fw-semibold">Vi hjälper dig gärna!</h3>
           </div>
         </div>
       </section>
 
-      <section>
+      <section> <!-- sektion för allmän introduktion till kontakt-->
         <h2>Har du frågor eller behöver hjälp?</h2>
         <p>
           Du kan kontakta oss med dina funderingar på flera sätt. Vår
@@ -105,19 +104,18 @@
       <section>
         <h3>Kontakta vår kundtjänst via telefon</h3>
         <p><b>Telefon:</b> 08-123 45 67</p>
-        <br>
+    
         <p>Mån-Fre: 08:00 - 18:00</p>
         <p>Lördag: 10:00 - 14:00</p>
         <p>Söndag: Stängt</p>
       </section>
       <hr>
-      <section class="contactform" id="contactform">
+      <section class="contactform" id="contactform"> <!-- sektion för kontaktformuläret -->
         <h3>Kontakta vår kundtjänst här via mail</h3>
         <p><b>Vår e-post:</b> info@solsemesterab.se</p>
-        <br>
         <p>Fyll i formuläret nedan så återkommer vi till dig så snart som möjligt.</p>
         <form style="margin-top: 40px" action="feedbackpage.html" method="get">
-          <div class="mb-3">
+          <div class="mb-3"> <!-- mb-3 ger lite marginal under varje inputfält -->
             <label for="name" class="form-label">Namn</label>
             <input
               type="text"
@@ -157,7 +155,7 @@
         </form>
       </section>
       <hr>
-      <section>
+      <section> <!-- sektion för sociala medier -->
         <div>
           <h3>Vi finns även på sociala medier</h3>
           <p>Följ gärna oss för att se <b>alla</b> nya erbjudanden!</p>
@@ -188,19 +186,18 @@
         </div>
       </section>
       <hr>
-      <section>
+      <section> <!-- sektion för fysisk adress -->
         <div class="mb-5">
           <h3>Vår adress</h3>
           <p>Du kan också besöka vår fysiska resebyrå Sol & Semester AB i Lindköping
           för att ställa dina frågor.
           </p>
-          <br>
           <p><b>Adress:</b> Solsemestergatan 65, 511 99 Lindköping</p>
         </div>
       </section>
     </main>
 
-    <div id="toppnav">
+    <div id="toppnav"> <!-- skapar en pil i vänstra nedre hörnet för att komma tillbaka till toppen av sidan -->
       <a href="#top" style="color: black;">&#8593;</a>
     </div>
 
