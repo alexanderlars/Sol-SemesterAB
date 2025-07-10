@@ -73,13 +73,13 @@ header .navbar{
 .navbar-nav .nav-link{
     color: var(--text) ;
     font-weight: 600;
+
 }
 
 
 .nav-link:hover{
     text-decoration: underline; /* Understrykning vid hover */
 }
-
 
 .d-inline-block{ /* Logotypen i navbaren */
   margin-right: 30px !important;
@@ -91,7 +91,7 @@ header .navbar{
 }
 
 /* ========================
-   STILAR FÖR SIDANS INNEHÅLL
+   STILAR FÖR BODYNS INNEHÅLL
    ======================== */
 
 body{
@@ -149,6 +149,10 @@ main{
     color: var(--prim); /* skriver över bootstrap för rubriker i kort */
   }
 
+.card h4{
+    color: var(--prim); /* skriver över bootstrap för rubriker i kort */
+}
+
 .card-header{
     background-color: var(--prim); /* bakgrundsfärg för headern i kort */
     border-radius: 5px;
@@ -163,6 +167,12 @@ main{
 .card i{ /* design för ikoner i korten */
     color: var(--prim);
     font-size: 30px;
+}
+
+.card:hover{
+    transform: translateY(-2px); /* lyfter kortet lite vid hover */
+    background-color: #e6f2fb;
+    box-shadow: #14304b 0px 1px 2px; /* lägger till en skugga för djup */
 }
 
 /* ========================
@@ -230,7 +240,7 @@ main{
 #toppnav { /* design för toppnavigationssymbolen */
   position: fixed; /* fäster symbolen längst ner till vänster */
   bottom: 1rem;
-  left: 1rem;
+  left: 1.3rem;
   height: 2rem;
   width: 2rem;
   border-radius: 1rem; /* rund */
@@ -280,7 +290,7 @@ footer{
 
   .footer-bottom a{
     color: var(--prim)
-    
+
   }
 
 
